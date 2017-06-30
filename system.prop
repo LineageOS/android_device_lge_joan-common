@@ -37,6 +37,9 @@ rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
 ro.telephony.default_network=10
 telephony.lteOnCdmaDevice=1
 
+# Time services
+persist.delta_time.enable=true
+
 # SurfaceFlinger
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=10500000

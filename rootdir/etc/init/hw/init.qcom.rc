@@ -362,9 +362,6 @@ on post-fs-data
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
-    # Create /data/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
     setprop vold.post_fs_data_done 1
 
     #Create a folder for SRS to be able to create a usercfg file
