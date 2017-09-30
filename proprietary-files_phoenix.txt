@@ -263,14 +263,12 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|2197d1c83b675317289dc89ab60
 vendor/lib64/vendor.qti.latency@2.0.so|66c9e12fec81283f98a207ad0a41a904cb9a4f1c
 
 # phoenix_sprout - Media
-vendor/lib/libI420colorconvert.so|21b0a4d811af7b482e17071ec3688ff52f1385ab
 vendor/lib/libdsd2pcm.so|f27b52fa65fa67eac9bcc1a8f3744176ae9bc9d7
 vendor/lib/libmm-color-convertor.so|184cbae24677573b49fedff75ba3f13f683a1637
 vendor/lib/libmmosal.so|59bd6244b605197ce9af747963cb02a820e66973
 vendor/lib/libqcbor.so|30193e3894b06be2d01aa0f67be34eb1467cf515
 vendor/lib/libstagefright_soft_qtiflacdec.so|eb95d7f8eb7cd7fa4ba09ddce8ddcde79522d963
 vendor/lib/libvpphvx.so|b2e15556a58d29620c834f840da1d5becfa7c743
-vendor/lib64/libI420colorconvert.so|f727f76d0526c72393d2df9a14cb69b5574eaa4f
 vendor/lib64/libmm-color-convertor.so|5f01eb066cefd7c467b2743200a1fc6078fee297
 vendor/lib64/libmmosal.so|53abc82c3e20fc48627bf5cc85b2c80442793d8d
 vendor/lib64/libstagefright_soft_qtiflacdec.so|7fd8480566f52f6f613ffda3bb0207ede4e1d97f
