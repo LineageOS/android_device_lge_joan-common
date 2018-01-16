@@ -158,7 +158,6 @@ vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 keyguard.no_require_sim=true
 
 # Media
-media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-http=true
 media.stagefright.enable-player=true
