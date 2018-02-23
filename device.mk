@@ -488,7 +488,6 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
-    wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
     WifiOverlay.lge_msm8998
