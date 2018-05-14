@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    tinymix \
     libtinycompress \
     libtinycompress.vendor
 
