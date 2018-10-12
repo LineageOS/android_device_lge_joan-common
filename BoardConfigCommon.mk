@@ -196,6 +196,7 @@ TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 
 # Recovery
+BOOTLOADER_MESSAGE_OFFSET := 128
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.joan
 
 # RIL
