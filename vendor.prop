@@ -135,7 +135,6 @@ persist.hwc.enable_vds=1
 persist.sys.wfd.virtual=0
 renderthread.skia.reduceopstasksplitting=true
 vendor.opengles.version=196610
-ro.sf.lcd_density=540
 ro.vendor.display.cabl=2
 sdm.debug.disable_partial_split=1
 sdm.perf_hint_window=50
