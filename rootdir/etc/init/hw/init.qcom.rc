@@ -1145,11 +1145,6 @@ service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootde
 on property:ro.logdumpd.enabled=1
     start logdumpd
 
-service time_daemon /system/vendor/bin/time_daemon
-    class main
-    user root
-    group root
-
 service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
     class late_start
     user system
