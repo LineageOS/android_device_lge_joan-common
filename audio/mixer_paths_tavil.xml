@@ -2441,6 +2441,10 @@
         <path name="unprocessed-handset-mic" />
     </path>
 
+    <path name="unprocessed-stereo-mic">
+        <path name="handset-dmic-endfire" />
+    </path>
+
     <!-- Added for ADSP testfwk -->
     <path name="ADSP testfwk">
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
