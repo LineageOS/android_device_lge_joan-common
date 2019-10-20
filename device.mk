@@ -416,13 +416,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
-# RCS
-PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
-
 # Releasetools
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/releasetools/device_check.sh:install/bin/device_check.sh
