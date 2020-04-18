@@ -24,3 +24,6 @@
 # External
 /devices/soc/c0a4900.sdhci/mmc_host*        auto                   auto    nosuid,nodev                                           wait,encryptable=footer,voldmanaged=external_SD:auto
 /devices/soc/a800000.ssusb/a800000.dwc3/xhci-hcd.0.auto/usb*       auto    auto    defaults                                       voldmanaged=usb:auto
+
+# ZRAM
+/dev/block/zram0                            none                   swap    defaults                                                                  defaults
