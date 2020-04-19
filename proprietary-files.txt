@@ -1014,6 +1014,3 @@ vendor/bin/cnss-daemon|bc8cbaea7fb8d8e4a16940faca6cd999341bac34
 vendor/bin/wifilearner|a57f932c2ebafd0caace96df2317142363b4ee5b
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e64760bc12779a83b905ca6b78f01
 vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|816a810aa2925fc7e469368c0a7ade33623132ff
-
-# Wifi (Wigig) - from phoenix_sprout - phoenix_lgu_kr-user 11 RKQ1.201123.002 8998110220201 release-keys
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|647e87f1e1248edff2871f22d6150d4fca8a8949
