@@ -36,6 +36,10 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
 # Display
 debug.sf.enable_gl_backpressure=1
 debug.sf.hw=1
