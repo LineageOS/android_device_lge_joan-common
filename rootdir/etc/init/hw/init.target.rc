@@ -30,7 +30,6 @@
 on early-init
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system
-    symlink /data/tombstones /tombstones
     mkdir /dsp 0771 media media
     write /proc/sys/kernel/sched_boost 1
 
@@ -81,11 +80,6 @@ on post-fs
     write /dev/ipa 1
 
 on post-fs-data
-    mkdir /data/tombstones 0771 system system
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-    mkdir /tombstones/wcnss 0771 system system
-    mkdir /tombstones/dsps 0771 system system
     mkdir /data/vendor/hbtp 0750 system system
 #    mkdir /data/misc/qvr 0770 system system
 
