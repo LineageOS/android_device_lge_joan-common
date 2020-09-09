@@ -30,6 +30,9 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# ARCore
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
