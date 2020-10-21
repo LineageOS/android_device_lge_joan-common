@@ -67,6 +67,7 @@ function blob_fixup() {
         ${PATCHELF} --add-needed libprocessgroup.so "${2}"
         ;;
     vendor/lib/hw/camera.msm8998.so)
+        sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
         sed -i "s/libsensor\.so/libtensor\.so/g" "${2}"
         sed -i "s/libhidltransport\.so/libgui_vendor\.so\x00\x00\x00/g" "${2}"
         sed -i "s/libandroid\.so/libui_shim\.so/g" "${2}"
