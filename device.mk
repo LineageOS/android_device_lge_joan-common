@@ -461,10 +461,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.smartselection.bundle1
-
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.joan
