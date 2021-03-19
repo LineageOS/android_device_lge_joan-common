@@ -58,3 +58,6 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Voice assistant
 ro.opa.eligible_device=true
+
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
