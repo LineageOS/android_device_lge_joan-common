@@ -514,7 +514,8 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wificond \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    WifiOverlay.lge_msm8998
 
 # Wifi IPA
 PRODUCT_PACKAGES += \
