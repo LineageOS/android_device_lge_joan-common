@@ -22,7 +22,7 @@ TARGET_KERNEL_VERSION := 4.4
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # inherit from the proprietary version
--include vendor/lge/joan-common/BoardConfigVendor.mk
+include vendor/lge/joan-common/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm64

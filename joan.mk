@@ -507,4 +507,4 @@ PRODUCT_PACKAGES += \
 #    WfdCommon
 
 # Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/lge/joan-common/joan-common-vendor.mk)
+$(call inherit-product, vendor/lge/joan-common/joan-common-vendor.mk)
