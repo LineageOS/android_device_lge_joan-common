@@ -131,6 +131,7 @@ ro.vendor.qti.core_ctl_max_cpu=4
 persist.debug.wfd.enable=0
 persist.hwc.enable_vds=1
 persist.sys.wfd.virtual=0
+renderthread.skia.reduceopstasksplitting=true
 vendor.opengles.version=196610
 ro.sf.lcd_density=580
 ro.vendor.display.cabl=2
