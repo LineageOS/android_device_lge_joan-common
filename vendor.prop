@@ -139,6 +139,7 @@ sdm.perf_hint_window=50
 #vendor.display.disable_skip_validate=1
 vendor.display.enable_default_color_mode=1
 vendor.display.perf_hint_window=50
+debug.renderengine.backend=skiaglthreaded
 
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
