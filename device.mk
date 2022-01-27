@@ -116,8 +116,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.4-impl \
     camera.device@3.4-external-impl \
     vendor.qti.hardware.camera.device@1.0 \
-    libxml2 \
-    Snap
+    libxml2
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
