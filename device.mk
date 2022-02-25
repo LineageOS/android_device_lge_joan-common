@@ -262,6 +262,7 @@ PRODUCT_PACKAGES += \
     vendor.lge.power.rc
 
 PRODUCT_PACKAGES += \
+    init.baseband.proxy.rc \
     init.joan_vendor.rc \
     init.joan.rc \
     init.lge.fingerprints.rc \
@@ -272,7 +273,7 @@ PRODUCT_PACKAGES += \
     init.msm8998.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.target.rc \
+    init.target.rc
 
 PRODUCT_PACKAGES += \
     fstab.joan \

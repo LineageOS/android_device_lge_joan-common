@@ -29,4 +29,4 @@
 
 # grep the modem partition for baseband version and set it
 # Set baseband version by grepping it from modem partition.
-        setprop gsm.version.baseband `strings /dev/block/bootdevice/by-name/modem 2>/dev/null | grep -m 1 "^MPSS.AT."`
+        setprop vendor.gsm.version.baseband `strings /dev/block/bootdevice/by-name/modem 2>/dev/null | grep -m 1 "^MPSS.AT."`
