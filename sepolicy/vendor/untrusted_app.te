@@ -1,5 +1,4 @@
 allow untrusted_app camera_prop:file { getattr open };
-allow untrusted_app vendor_camera_prop:file { getattr open };
 allow untrusted_app thermal-engine:file { execute_no_trans };
 allow untrusted_app vendor_opengles_prop:file { read };
 allow untrusted_app thermal-engine_exec:file { execute_no_trans };
@@ -15,10 +14,8 @@ allow untrusted_app_27 sysfs_graphics:dir { open read search };
 allow untrusted_app_27 sysfs_graphics:file { getattr open read };
 allow untrusted_app_27 untrusted_app_27:socket { create ioctl write };
 allow untrusted_app_27 camera_prop:file { read };
-allow untrusted_app_27 vendor_camera_prop:file { read };
 
 allow untrusted_app_25 camera_prop:file { read };
-allow untrusted_app_25 vendor_camera_prop:file { read };
 
 allow untrusted_app mnt_vendor_file:dir { getattr };
 allow untrusted_app firmware_file:filesystem { getattr };
