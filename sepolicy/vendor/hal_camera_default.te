@@ -1,6 +1,11 @@
+set_prop(hal_camera_default, {
+    camera-hal_prop
+    vendor_default_prop
+});
+get_prop(hal_camera_default, camera-hal_prop);
+
 allow hal_camera_default diag_device:chr_file { ioctl open read write };
-set_prop(hal_camera_default, camera-hal_prop);
-allow hal_camera_default camera-hal_prop:file { getattr open read };
 allow hal_camera_default firmware_file:file { open read };
 allow hal_camera_default firmware_file:dir { search };
 allow hal_camera_default hal_configstore_default:binder { call };
+allow hal_camera_default sysfs_kgsl:file r_file_perms;

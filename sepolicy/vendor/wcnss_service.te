@@ -1,0 +1,3 @@
+allow wcnss_service kmsg_device:chr_file { open read write };
+allow wcnss_service persist_drm_file:dir { search };
+allow wcnss_service persist_drm_file:lnk_file { read };

@@ -1,5 +1,7 @@
 allow rild vendor_file:file { ioctl };
-set_prop(rild, rild_prop);
-allow rild rild_prop:file { getattr open read };
 
-allow rild bluetooth_prop:file { open read };
+get_prop(rild, {
+    rild_prop
+    bluetooth_prop
+});
+set_prop(rild, rild_prop);

@@ -1,1 +1,1 @@
-allow hal_nfc_default device:chr_file { ioctl  };
+allow hal_nfc_default device:chr_file { ioctl };

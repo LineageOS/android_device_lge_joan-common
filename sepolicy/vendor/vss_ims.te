@@ -1,0 +1,7 @@
+type vss_ims, domain;
+
+type vss_ims_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vss_ims)
+
+get_prop(vss_ims, hwservicemanager_prop);
+binder_call(vss_ims, hwservicemanager);

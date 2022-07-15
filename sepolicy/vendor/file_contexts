@@ -1,30 +1,39 @@
-/dev/block/platform/1da4000.ufshc/sda3						u:object_r:mpt_file:s0
-/dev/block/platform/1da4000.ufshc/sda4						u:object_r:persist_drm_file:s0
-/dev/block/platform/1da4000.ufshc/sda5						u:object_r:sns_file:s0
+/dev/block/platform/soc/1da4000.ufshc/sda3										u:object_r:mpt_block_device:s0
+/dev/block/platform/soc/1da4000.ufshc/sda4										u:object_r:drm_block_device:s0
+/dev/block/platform/soc/1da4000.ufshc/sda5										u:object_r:sns_block_device:s0
+/dev/block/platform/soc/1da4000.ufshc/sda16										u:object_r:qni_block_device:s0
+/dev/block/platform/soc/1da4000.ufshc/sda21										u:object_r:userdata_block_device:s0
 
-/mnt/vendor/mpt(/.*)?								u:object_r:mpt_file:s0
-/vendor/mpt(/.*)?								u:object_r:mpt_file:s0
+/mnt/vendor/mpt(/.*)?															u:object_r:mpt_file:s0
+/vendor/mpt(/.*)?																u:object_r:mpt_file:s0
 
-/mnt/vendor/persist-lg(/.*)?							u:object_r:persist_drm_file:s0
-/mnt/vendor/persist-lg/data/widevine(/.*)?					u:object_r:persist_drm_file:s0
-/mnt/vendor/persist-lg/firmware/(/.*)?						u:object_r:persist_drm_file:s0
+/mnt/vendor/persist-lg(/.*)?													u:object_r:persist_drm_file:s0
+/mnt/vendor/persist-lg/data/widevine(/.*)?										u:object_r:persist_drm_file:s0
+/mnt/vendor/persist-lg/firmware/(/.*)?											u:object_r:persist_drm_file:s0
 
-/mnt/vendor/sns									u:object_r:sensors_data_file:s0
-/mnt/vendor/sns/cal(/.*)?							u:object_r:sensors_data_file:s0
-/mnt/vendor/persist-lg/sensors(/.*)?						u:object_r:sensors_persist_file:s0
-/vendor/sns(/.*)?								u:object_r:sensors_data_file:s0
+/mnt/vendor/sns																	u:object_r:sns_file:s0
+/mnt/vendor/sns/cal(/.*)?														u:object_r:sns_file:s0
+/mnt/vendor/persist-lg/sensors(/.*)?											u:object_r:sensors_persist_file:s0
+/vendor/sns(/.*)?																u:object_r:sns_file:s0
 
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan		u:object_r:hal_light_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan	u:object_r:hal_thermal_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service-nxp      	u:object_r:hal_nfc_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine	u:object_r:hal_drm_widevine_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan					u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan				u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service-nxp						u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine				u:object_r:hal_drm_widevine_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.joan				u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.joan					u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.biometrics\.fingerprint@2\.1-service	u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.vss_ims@1\.0-service					u:object_r:vss_ims_exec:s0
 
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.joan	u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw_vari\.sh																			u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.baseband\.sh																	u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.joan\.hdmi\.sh																u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.qti\.qseecomd\.sh																u:object_r:qti_init_shell_exec:s0
 
-/sys/devices/virtual/input/lge_fingerprint/device_prepare			u:object_r:sysfs_lge_fingerprint_prepare:s0
-
-/sys/devices/soc/c175000.i2c/i2c-1/1-0048/headset_type				u:object_r:sysfs_lge_hifi_dac:s0
-/sys/devices/soc/c175000.i2c/i2c-1/1-0048/avc_volume				u:object_r:sysfs_lge_hifi_dac:s0
-
-/(vendor|system/vendor)/bin/init\.joan\.hdmi\.sh                            	u:object_r:qti_init_shell_exec:s0
-/(vendor|system/vendor)/bin/init\.joan\.power\.sh				u:object_r:qti_init_shell_exec:s0
+/sys/devices/virtual/input/lge_fingerprint(/.*)?																u:object_r:sysfs_lge_fingerprint:s0
+/sys/devices/virtual/input/lge_touch(/.*)?																		u:object_r:sysfs_lge_touch:s0
+/sys/devices/virtual/panel/img_tune(/.*)?																		u:object_r:sysfs_img_tune:s0
+/sys/devices/soc/c175000.i2c/i2c-1/1-0048(/.*)?																	u:object_r:sysfs_lge_hifi_dac:s0
+/sys/devices/soc/c175000.i2c/i2c-1/1-0061/power_supply/dc-wireless(/.*)?										u:object_r:sysfs_usb_supply:s0
+/sys/devices/soc/c900000.qcom,mdss_mdp/c900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight-ex(/.*)?	u:object_r:sysfs_graphics:s0
+/sys/devices/vendor/vendor:lge-veneer-psy/power_supply/veneer(/.*)?												u:object_r:sysfs_lge_power:s0

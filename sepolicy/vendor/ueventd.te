@@ -1,0 +1,2 @@
+allow ueventd persist_drm_file:dir { search };
+allow ueventd persist_drm_file:file r_file_perms;

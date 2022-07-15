@@ -1,0 +1,4 @@
+allow hal_health_default sysfs_lge_power:dir { search };
+allow hal_health_default sysfs_lge_power:file r_file_perms;
+allow hal_health_default sysfs_lge_touch:file { open write };
+allow hal_health_default sysfs_usb_supply:file r_file_perms;

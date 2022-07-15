@@ -1,1 +1,5 @@
-allow system_server baseband_prop:file { getattr open read };
+get_prop(system_server, {
+    baseband_prop
+    userspace_reboot_exported_prop
+    userspace_reboot_config_prop
+});

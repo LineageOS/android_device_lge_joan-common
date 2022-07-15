@@ -1,7 +1,6 @@
+set_prop(tee, system_prop);
+
 allow tee fingerprintd_data_file:file { read write };
-
-allow tee system_prop:property_service { set };
-
 allow tee persist_drm_file:dir search;
 allow tee persist_drm_file:file r_file_perms;
 allow tee persist_drm_file:lnk_file r_file_perms;

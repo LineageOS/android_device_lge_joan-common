@@ -2,17 +2,37 @@ allow init hwservicemanager:binder { call transfer };
 
 allow init sysfs_graphics:file { open setattr write };
 
+allow init {
+    hal_perf_default
+    hal_graphics_composer_default
+    nfc
+}:binder { call };
+allow init mediadrmserver:binder { transfer };
+
 allow init hal_perf_hwservice:hwservice_manager { find };
-allow init hal_perf_default:binder { call };
-allow init nfc:binder { call };
-allow init device:chr_file { ioctl };
 allow init hidl_base_hwservice:hwservice_manager { add };
 
-allow init init:capability { sys_nice };
+allow init device:chr_file { ioctl };
+allow init ion_device:chr_file r_file_perms;
+
+allow init {
+    mnt_product_file
+    mpt_file
+    persist_drm_file
+    sns_file
+}:dir mounton;
+
+allow init self:capability { sys_nice };
+allow init self:process { execmem };
 
 allow init sysfs:file { setattr };
-
-allow init mediadrmserver:binder { transfer };
-allow init init:process { execmem };
+allow init sysfs_img_tune:file { open write };
+allow init sysfs_lge_fingerprint:file { open read write };
 
 allow init proc:file { getattr open read };
+
+allow init {
+    hal_fingerprint_default_exec
+    same_process_hal_file
+    vss_ims_exec
+}:file { execute };
