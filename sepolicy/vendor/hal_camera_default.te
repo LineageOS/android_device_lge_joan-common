@@ -3,7 +3,4 @@ set_prop(hal_camera_default, camera-hal_prop);
 allow hal_camera_default camera-hal_prop:file { getattr open read };
 allow hal_camera_default firmware_file:file { open read };
 allow hal_camera_default firmware_file:dir { search };
-allow hal_camera_default camera_data_file:dir { search };
 allow hal_camera_default hal_configstore_default:binder { call };
-allow hal_camera_default hal_configstore_ISurfaceFlingerConfigs:hwservice_manager { find };
-allow hal_camera_default default_prop:property_service { set };

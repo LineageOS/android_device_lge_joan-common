@@ -4,19 +4,9 @@ allow init sysfs_graphics:file { open setattr write };
 
 allow init hal_perf_hwservice:hwservice_manager { find };
 allow init hal_perf_default:binder { call };
-allow init shell_exec:file { execute_no_trans };
 allow init nfc:binder { call };
-allow init device:chr_file { ioctl open read write };
-allow init hal_light_hwservice:hwservice_manager { add };
+allow init device:chr_file { ioctl };
 allow init hidl_base_hwservice:hwservice_manager { add };
-allow init hal_power_hwservice:hwservice_manager { add };
-allow init hal_thermal_hwservice:hwservice_manager { add };
-allow init default_android_hwservice:hwservice_manager { add find };
-allow init hal_nfc_hwservice:hwservice_manager { add };
-allow init hal_vibrator_hwservice:hwservice_manager { add };
-
-allow init vendor_file:file { execute_no_trans };
-allow init system_file:file { execute_no_trans };
 
 allow init init:capability { sys_nice };
 
@@ -24,11 +14,5 @@ allow init sysfs:file { setattr };
 
 allow init mediadrmserver:binder { transfer };
 allow init init:process { execmem };
-allow init hal_wifi_supplicant_default:process { noatsecure };
 
 allow init proc:file { getattr open read };
-allow init vndbinder_device:chr_file { ioctl open read write };
-
-allow init hal_drm_hwservice:hwservice_manager { add };
-
-allow init tee_device:chr_file { ioctl };

@@ -7,4 +7,3 @@ allow hal_audio_default init:unix_stream_socket {connectto };
 
 allow hal_audio_default property_socket:sock_file { write };
 allow hal_audio_default wifi_prop:property_service { set };
-
