@@ -42,14 +42,6 @@ on post-fs
     chmod 0771 /mnt/vendor/power
     restorecon_recursive /mnt/vendor/power
 
-    chown system system /mnt/product/quality
-    chmod 0755 /mnt/product/quality
-    restorecon_recursive /mnt/product/quality
-
-    chown system system /mnt/product/srtc
-    chmod 0755 /mnt/product/srtc
-    restorecon_recursive /mnt/product/srtc
-
     start sreadahead
 
 # enable & disable crash handler, rtb & trace event through property
