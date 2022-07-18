@@ -14,9 +14,7 @@
 /mnt/vendor/persist-lg/sensors(/.*)?						u:object_r:sensors_persist_file:s0
 /vendor/sns(/.*)?								u:object_r:sensors_data_file:s0
 
-/(vendor|system/vendor)/bin/immvibed						u:object_r:immvibed_exec:s0
-
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan	u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan		u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan	u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service-nxp      	u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine	u:object_r:hal_drm_widevine_exec:s0

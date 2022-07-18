@@ -16,13 +16,6 @@ import /vendor/etc/init/hw/init.msm8998.rc
 # import $(TARGET_PRODUCT) vendor rc file
 import /vendor/etc/init/hw/init.${ro.hardware}_vendor.rc
 
-# Begin Immersion Changes
-service immvibed /vendor/bin/immvibed -p 99 -u 1000
-    class core
-    user root
-    group root
-    ioprio rt 4
-# End Immersion Changes
 on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko

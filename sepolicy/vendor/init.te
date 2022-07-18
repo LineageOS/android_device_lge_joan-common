@@ -21,9 +21,6 @@ allow init system_file:file { execute_no_trans };
 allow init init:capability { sys_nice };
 
 allow init sysfs:file { setattr };
-allow init immvibed_exec:file { execute execute_no_trans getattr open read };
-
-allow init tee_device:chr_file { write };
 
 allow init mediadrmserver:binder { transfer };
 allow init init:process { execmem };
