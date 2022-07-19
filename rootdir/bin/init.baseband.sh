@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 # Copyright (c) 2015, CyanogenMod. All rights reserved.
 # Copyright (c) 2018, InvictrixROM. All rights reserved.
 #
