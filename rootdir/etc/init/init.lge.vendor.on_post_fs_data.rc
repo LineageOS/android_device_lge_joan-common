@@ -94,9 +94,6 @@ on post-fs-data
     restorecon /oem/OP
     restorecon_recursive /oem/OP
 
-    #Widevine firmware copy
-    exec - system system -- /vendor/bin/cpfirmware widevine /mnt/vendor/persist-lg/firmware
-
     #Create callduration file
     mkdir /mnt/vendor/persist-lg/callduration 0770 system radio
     chown system radio /mnt/vendor/persist-lg/callduration
