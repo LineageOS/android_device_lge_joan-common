@@ -3,7 +3,10 @@ allow hal_fingerprint_default tee_device:chr_file { ioctl open read write };
 allow hal_fingerprint_default firmware_file:file { getattr open read };
 allow hal_fingerprint_default firmware_file:dir { remove_name search };
 allow hal_fingerprint_default sysfs:file { write };
-allow hal_fingerprint_default fingerprintd_data_file:file { write };
 
 allow hal_fingerprint_default sysfs_lge_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_lge_fingerprint:file rw_file_perms;
+
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprintd_data_file:file rw_file_perms;
