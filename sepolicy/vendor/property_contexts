@@ -12,5 +12,7 @@ persist.vendor.lge.audio.hifi_dac.left_balance		u:object_r:hifi_dac_prop:s0
 persist.vendor.lge.audio.hifi_dac.right_balance		u:object_r:hifi_dac_prop:s0
 persist.vendor.lge.audio.hifi_dac.mode			u:object_r:hifi_dac_prop:s0
 persist.vendor.lge.audio.hifi_dac.avc_volume		u:object_r:hifi_dac_prop:s0
+persist.vendor.lge.sys.thermald_miti_off            u:object_r:thermal-engine_prop:s0
+
 vendor.powerhal.state 				 	u:object_r:power_prop:s0
 vendor.powerhal.audio 					u:object_r:power_prop:s0
