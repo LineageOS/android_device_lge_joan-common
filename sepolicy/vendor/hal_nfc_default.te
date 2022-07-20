@@ -1,2 +1,5 @@
-allow hal_nfc_default device:chr_file { ioctl };
-allow hal_nfc_default nxpnfc_hwservice:hwservice_manager { add find };
+allow hal_nfc_default nfc_device:chr_file { read write ioctl };
+allow hal_nfc_default {
+    nxpnfc_hwservice
+    nxpese_hwservice
+}:hwservice_manager { add find };

@@ -3,6 +3,7 @@
 /dev/block/platform/soc/1da4000.ufshc/sda5										u:object_r:sns_block_device:s0
 /dev/block/platform/soc/1da4000.ufshc/sda16										u:object_r:qni_block_device:s0
 /dev/block/platform/soc/1da4000.ufshc/sda21										u:object_r:userdata_block_device:s0
+/dev/pn547                                                                      u:object_r:nfc_device:s0
 
 /mnt/vendor/mpt(/.*)?															u:object_r:mpt_file:s0
 /vendor/mpt(/.*)?																u:object_r:mpt_file:s0
