@@ -67,6 +67,7 @@ get_prop(flags_health_check, {
     storage_config_prop
     surfaceflinger_display_prop
     system_adbd_prop
+    system_adbd_prop
     system_boot_reason_prop
     system_lmk_prop
     system_trace_prop

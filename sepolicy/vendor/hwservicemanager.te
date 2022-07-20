@@ -2,6 +2,5 @@ allow hwservicemanager init:dir { search };
 allow hwservicemanager init:file { open read };
 allow hwservicemanager init:process { getattr };
 
-allow hwservicemanager vss_ims:dir { search };
-allow hwservicemanager vss_ims:file { open read };
-allow hwservicemanager vss_ims:process { getattr };
+allow hwservicemanager hal_vss_ims_default_exec:dir { search };
+allow hwservicemanager hal_vss_ims_default_exec:process { getattr };

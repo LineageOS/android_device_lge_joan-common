@@ -32,7 +32,7 @@ allow init sysfs_lge_fingerprint:file { open read write };
 allow init proc:file { getattr open read };
 
 allow init {
+    hal_vss_ims_default_exec
     hal_fingerprint_default_exec
     same_process_hal_file
-    vss_ims_exec
 }:file { execute };

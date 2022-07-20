@@ -1,0 +1,11 @@
+# Biometrics
+vendor.lge.hardware.biometrics.fingerprint::ILgeBiometricsFingerprint   u:object_r:hal_fingerprint_hwservice:s0
+
+# IMS
+vendor.lge.hardware.vss_ims::IVssIms                                    u:object_r:hal_vss_ims_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:nxpnfc_hwservice:s0
+
+# RIL
+vendor.qti.hardware.slmadapter::ISlmAdapter                             u:object_r:vendor_hal_slmadapter_hwservice:s0
