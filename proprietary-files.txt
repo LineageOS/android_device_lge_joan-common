@@ -589,6 +589,18 @@ vendor/lib64/libgcs.so
 vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so
 vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 
+# Perf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-8998.conf
+vendor/etc/thermal-engine-default.conf
+vendor/etc/perf/perf-profile0.conf
+vendor/etc/perf/perf-profile1.conf
+vendor/etc/perf/perf-profile2.conf
+vendor/etc/perf/perf-profile3.conf
+vendor/etc/perf/perf-profile4.conf
+vendor/etc/perf/perf-profile5.conf
+vendor/etc/perf/perf-profile6.conf
+
 # Postprocessing
 vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
 
