@@ -17,6 +17,8 @@
 /mnt/vendor/persist-lg/sensors(/.*)?											u:object_r:sensors_persist_file:s0
 /vendor/sns(/.*)?																u:object_r:sns_file:s0
 
+/mnt/vendor/persist-lg/thermal(/.*)?											u:object_r:persist_thermal_file:s0
+
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan					u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan				u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.1-service-nxp						u:object_r:hal_nfc_default_exec:s0

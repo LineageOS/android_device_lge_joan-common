@@ -4,4 +4,10 @@ set_prop(thermal-engine, thermal-engine_prop);
 allow thermal-engine property_socket:sock_file { append write };
 allow thermal-engine init:unix_stream_socket { connectto };
 allow thermal-engine sysfs:dir { read open };
-allow thermal-engine persist_drm_file:dir { search };
+allow thermal-engine {
+    mnt_vendor_file
+    persist_drm_file
+}:dir { search };
+allow thermal-engine persist_thermal_file:dir rw_dir_perms;
+allow thermal-engine persist_thermal_file:file create_file_perms;
+r_dir_file(thermal-engine, sysfs_usb_supply);
