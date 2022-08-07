@@ -3,9 +3,14 @@ type sns_file, file_type, data_file_type;
 
 type persist_thermal_file, file_type, vendor_persist_type;
 
-type sysfs_img_tune, sysfs_type, fs_type;
+type debugfs_wlan, debugfs_type, fs_type;
+
+type proc_sensordata, proc_type, fs_type;
+
+type sysfs_input, fs_type, sysfs_type;
 type sysfs_lge_fingerprint, sysfs_type, fs_type;
 type sysfs_lge_hifi_dac, sysfs_type, fs_type;
 type sysfs_lge_power, sysfs_type, fs_type;
 type sysfs_lge_touch, sysfs_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_scsi_devices_0000, sysfs_type, fs_type;

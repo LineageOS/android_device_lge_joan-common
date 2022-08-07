@@ -32,11 +32,3 @@
 /(vendor|system/vendor)/bin/init\.baseband\.sh																	u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.joan\.hdmi\.sh																u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.qseecomd\.sh																u:object_r:qti_init_shell_exec:s0
-
-/sys/devices/virtual/input/lge_fingerprint(/.*)?																u:object_r:sysfs_lge_fingerprint:s0
-/sys/devices/virtual/input/lge_touch(/.*)?																		u:object_r:sysfs_lge_touch:s0
-/sys/devices/virtual/panel/img_tune(/.*)?																		u:object_r:sysfs_img_tune:s0
-/sys/devices/soc/c175000.i2c/i2c-1/1-0048(/.*)?																	u:object_r:sysfs_lge_hifi_dac:s0
-/sys/devices/soc/c175000.i2c/i2c-1/1-0061/power_supply/dc-wireless(/.*)?										u:object_r:sysfs_usb_supply:s0
-/sys/devices/soc/c900000.qcom,mdss_mdp/c900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight-ex(/.*)?	u:object_r:sysfs_graphics:s0
-/sys/devices/vendor/vendor:lge-veneer-psy/power_supply/veneer(/.*)?												u:object_r:sysfs_lge_power:s0

@@ -1,1 +1,1 @@
-allow hvdcp sysfs:file { getattr open read };
+r_dir_file(hvdcp, sysfs_usb_supply);
