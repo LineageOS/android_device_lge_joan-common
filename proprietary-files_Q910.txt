@@ -351,10 +351,6 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libtinyxml2_1.so
 
-# Graphics - Vulkan
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
-
 # Improvetouch
 vendor/etc/hbtp/loader.cfg
 vendor/etc/hbtp/qtc800h.bin
