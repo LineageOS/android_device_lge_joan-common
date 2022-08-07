@@ -6,6 +6,7 @@ get_prop(hal_audio_default, {
 set_prop(hal_audio_default, {
     hifi_dac_prop
     wifi_prop
+    vendor_audio_prop
     vendor_default_prop
 })
 

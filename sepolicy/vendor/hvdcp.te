@@ -1,1 +1,3 @@
-r_dir_file(hvdcp, sysfs_usb_supply);
+allow hvdcp sysfs_batteryinfo:dir { search };
+allow hvdcp sysfs_usb_supply:dir { search };
+allow hvdcp sysfs_usb_supply:file r_file_perms;
