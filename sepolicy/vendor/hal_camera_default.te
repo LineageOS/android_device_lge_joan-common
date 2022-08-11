@@ -1,6 +1,5 @@
 set_prop(hal_camera_default, {
     camera-hal_prop
-    vendor_default_prop
 });
 get_prop(hal_camera_default, camera-hal_prop);
 

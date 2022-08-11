@@ -1,7 +1,4 @@
 allow rild vendor_file:file { ioctl };
 
-get_prop(rild, {
-    rild_prop
-    bluetooth_prop
-});
+get_prop(rild, rild_prop);
 set_prop(rild, rild_prop);

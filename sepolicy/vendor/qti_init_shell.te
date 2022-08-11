@@ -10,8 +10,6 @@ allow qti_init_shell sysfs:file { setattr };
 
 get_prop(qti_init_shell, vendor_tee_listener_prop);
 set_prop(qti_init_shell, {
-    debug_prop
-    system_prop
     qti-shell_prop
     ctl_start_prop
     ctl_default_prop

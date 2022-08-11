@@ -2,7 +2,6 @@ get_prop(system_app, {
     baseband_prop
     hifi_dac_prop
 });
-set_prop(system_app, hifi_dac_prop);
 
 allow system_app proc_pagetypeinfo:file { getattr open read };
 
