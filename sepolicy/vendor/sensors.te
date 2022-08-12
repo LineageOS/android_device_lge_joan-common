@@ -4,3 +4,5 @@ allow sensors sns_file:file { getattr open read write };
 allow sensors sns_file:dir { getattr open read search };
 
 allow sensors sensors:capability { net_raw };
+
+get_prop(sensors, vendor_sensors_prop);

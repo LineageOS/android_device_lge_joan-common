@@ -1,10 +1,11 @@
 get_prop(hal_audio_default, {
     vendor_audio_prop
+    vendor_bluetooth_prop
 });
 
 set_prop(hal_audio_default, {
     vendor_audio_prop
-    vendor_audio_prop
+    vendor_bluetooth_prop
 })
 
 allow hal_audio_default vendor_data_file:dir { write add_name };

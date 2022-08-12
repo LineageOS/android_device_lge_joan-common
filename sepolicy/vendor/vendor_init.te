@@ -13,3 +13,9 @@ allow vendor_init debugfs:file { write };
 
 allow vendor_init sns_file:dir create_dir_perms;
 allow vendor_init oemfs:dir r_dir_perms;
+
+set_prop(vendor_init, {
+    rild_prop
+    vendor_camera_prop
+    vendor_tee_listener_prop
+});
