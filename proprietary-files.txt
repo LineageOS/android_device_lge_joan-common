@@ -510,14 +510,15 @@ vendor/lib64/hw/fingerprint.msm8998.so
 lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so:vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so
 
 # FM
-lib64/libfm-hci.so
-lib64/fm_helium.so
--lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so
-lib/libfm-hci.so
-lib/fm_helium.so
--lib/vendor.qti.hardware.fm@1.0.so:vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+lib/libfm-hci.so:system_ext/lib/libfm-hci.so
+lib/fm_helium.so:system_ext/lib/fm_helium.so
+lib/vendor.qti.hardware.fm@1.0.so:vendor/lib/vendor.qti.hardware.fm@1.0.so
+lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so
+lib64/fm_helium.so:system_ext/lib64/fm_helium.so
+lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so
+lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 # Graphics - Firmware
 vendor/firmware/a225p5_pm4.fw
