@@ -6,8 +6,6 @@ persist.vendor.lge.camera.					u:object_r:vendor_camera_prop:s0
 vendor.lge.camera.							u:object_r:vendor_camera_prop:s0
 persist.camera.								u:object_r:vendor_camera_prop:s0
 
-persist.vendor.lge.audio.hifi_dac.			u:object_r:hifi_dac_prop:s0
-
 persist.sys.thermald_miti_off				u:object_r:thermal-engine_prop:s0
 persist.vendor.lge.sys.thermald_miti_off	u:object_r:thermal-engine_prop:s0
 

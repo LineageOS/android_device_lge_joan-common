@@ -38,7 +38,7 @@ get_prop(flags_health_check, {
     exported_overlay_prop
     graphics_config_prop
     heapprofd_enabled_prop
-    hifi_dac_prop
+    vendor_audio_prop
     hwservicemanager_prop
     incremental_prop
     llkd_prop

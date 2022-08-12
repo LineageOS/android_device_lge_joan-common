@@ -1,9 +1,9 @@
 get_prop(hal_audio_default, {
-    hifi_dac_prop
+    vendor_audio_prop
 });
 
 set_prop(hal_audio_default, {
-    hifi_dac_prop
+    vendor_audio_prop
     vendor_audio_prop
 })
 

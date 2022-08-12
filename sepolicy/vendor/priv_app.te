@@ -7,6 +7,6 @@ allow priv_app sysfs_lge_hifi_dac:file rw_file_perms;
 
 get_prop(priv_app,{
     baseband_prop
-    hifi_dac_prop
+    vendor_audio_prop
 });
 
