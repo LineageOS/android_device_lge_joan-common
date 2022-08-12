@@ -1,6 +1,9 @@
-type thermal-engine_prop, property_type;
-type camera-hal_prop, property_type;
-type rild_prop, property_type;
-type qti-shell_prop, property_type;
-type hifi_dac_prop, property_type;
-type power_prop, property_type;
+vendor_internal_prop(netmgrd_prop);
+vendor_internal_prop(power_prop);
+vendor_internal_prop(qti-shell_prop);
+vendor_internal_prop(rild_prop);
+vendor_internal_prop(thermal-engine_prop);
+
+vendor_public_prop(hifi_dac_prop);
+vendor_public_prop(vendor_camera_prop);
+vendor_public_prop(vendor_fp_prop);

@@ -9,7 +9,6 @@ get_prop(flags_health_check, {
     boottime_public_prop
     boottime_prop
     bpf_progs_loaded_prop
-    camera-hal_prop
     camera_prop
     cold_boot_done_prop
     cpu_variant_prop
@@ -53,9 +52,6 @@ get_prop(flags_health_check, {
     nnapi_ext_deny_product_prop
     overlay_prop
     persistent_properties_ready_prop
-    power_prop
-    qti-shell_prop
-    rild_prop
     safemode_prop
     storage_config_prop
     surfaceflinger_display_prop
@@ -65,7 +61,6 @@ get_prop(flags_health_check, {
     test_boot_reason_prop
     test_harness_prop
     theme_prop
-    thermal-engine_prop
     time_prop
     traced_enabled_prop
     traced_lazy_prop
@@ -80,6 +75,7 @@ get_prop(flags_health_check, {
     vendor_bg_daemon_prop
     vendor_bluetooth_prop
     vendor_bservice_prop
+    vendor_camera_prop
     vendor_cdsprpcd_prop
     vendor_cgroup_follow_prop
     vendor_cnd_vendor_prop
@@ -124,9 +120,13 @@ dontaudit flags_health_check {
     charger_prop
     firstboot_prop
     net_dns_prop
+    power_prop
+    qti-shell_prop
     rebootescrow_hal_prop
+    rild_prop
     serialno_prop
     system_jvmti_agent_prop
+    thermal-engine_prop
     vendor_audio_debug_prop
     vendor_boot_mode_prop
     vendor_cap_configstore_dbg_prop

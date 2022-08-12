@@ -1,18 +1,21 @@
-persist.sys.thermald_miti_off     u:object_r:thermal-engine_prop:s0
-sys.camera.pd_test.result         u:object_r:camera-hal_prop:s0
-persist.data.rear.minfps          u:object_r:camera-hal_prop:s0
-persist.data.front.minfps         u:object_r:camera-hal_prop:s0
-ro.ims.networkinfo                u:object_r:rild_prop:s0
-persist.mmi.misc_dev_path         u:object_r:qti-shell_prop:s0
-vendor.gsm.version.baseband	      u:object_r:baseband_prop:s0
+sys.camera.pd_test.result					u:object_r:vendor_camera_prop:s0
+persist.data.rear.minfps					u:object_r:vendor_camera_prop:s0
+persist.data.front.minfps					u:object_r:vendor_camera_prop:s0
+persist.camera.arcbeauty.					u:object_r:vendor_camera_prop:s0
+persist.vendor.lge.camera.					u:object_r:vendor_camera_prop:s0
+vendor.lge.camera.							u:object_r:vendor_camera_prop:s0
+persist.camera.								u:object_r:vendor_camera_prop:s0
 
-persist.vendor.lge.audio.hifi_dac.digitalFilter		u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.audio.hifi_dac.soundPreset		u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.audio.hifi_dac.left_balance		u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.audio.hifi_dac.right_balance		u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.audio.hifi_dac.mode			u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.audio.hifi_dac.avc_volume		u:object_r:hifi_dac_prop:s0
-persist.vendor.lge.sys.thermald_miti_off            u:object_r:thermal-engine_prop:s0
+persist.vendor.lge.audio.hifi_dac.			u:object_r:hifi_dac_prop:s0
 
-vendor.powerhal.state 				 	u:object_r:power_prop:s0
-vendor.powerhal.audio 					u:object_r:power_prop:s0
+persist.sys.thermald_miti_off				u:object_r:thermal-engine_prop:s0
+persist.vendor.lge.sys.thermald_miti_off	u:object_r:thermal-engine_prop:s0
+
+vendor.gsm.version.baseband					u:object_r:baseband_prop:s0
+persist.data_netmgrd_mtu					u:object_r:netmgrd_prop:s0
+vendor.powerhal.							u:object_r:power_prop:s0
+persist.mmi.misc_dev_path					u:object_r:qti-shell_prop:s0
+ro.ims.networkinfo							u:object_r:rild_prop:s0
+ro.bluetooth.ftm_enabled					u:object_r:vendor_bluetooth_prop:s0
+fpc_kpi										u:object_r:vendor_fp_prop:s0
+sdm.disable_hdr_lut_gen						u:object_r:vendor_display_prop:s0

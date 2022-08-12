@@ -1,7 +1,5 @@
-set_prop(hal_camera_default, {
-    camera-hal_prop
-});
-get_prop(hal_camera_default, camera-hal_prop);
+get_prop(hal_camera_default, vendor_camera_prop);
+set_prop(hal_camera_default, vendor_camera_prop);
 
 allow hal_camera_default diag_device:chr_file { ioctl open read write };
 allow hal_camera_default firmware_file:file { open read };
