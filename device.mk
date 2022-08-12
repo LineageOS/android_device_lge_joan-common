@@ -237,16 +237,46 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # Init
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.joan:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.joan \
-    $(DEVICE_PATH)/rootdir/etc/ueventd.joan.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
+PRODUCT_PACKAGES += \
+    hw_vari.sh \
+    init.baseband.sh \
+    init.class_main.sh \
+    init.joan.hdmi.sh \
+    init.lge.usb.lao.sh \
+    init.qcom.class_core.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qti.fm.sh \
+    init.qti.qseecomd.sh
 
-$(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/hw/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
-$(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/etc/init/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/$(notdir $f)))
-$(foreach f,$(wildcard $(DEVICE_PATH)/rootdir/bin/*.sh),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/bin/$(notdir $f)))
+PRODUCT_PACKAGES += \
+    hw_vari.rc \
+    init.lge.audio.rc \
+    init.lge.bootproperty_trigger.rc \
+    init.lge.vendor.on_boot.rc \
+    init.lge.vendor.on_post_fs_data.rc \
+    init.lge.vendor.on_post_fs.rc \
+    init.lge.vendor.services.rc \
+    init.qti.fm.rc \
+    vendor.lge.power.rc
+
+PRODUCT_PACKAGES += \
+    init.joan_vendor.rc \
+    init.joan.rc \
+    init.lge.fingerprints.rc \
+    init.lge.power.rc \
+    init.lge.sensors.rc \
+    init.lge.usb.configfs.rc \
+    init.lge.usb.rc \
+    init.msm8998.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.target.rc \
+
+PRODUCT_PACKAGES += \
+    fstab.joan \
+    ueventd.joan.rc
 
 # IRSC
 PRODUCT_COPY_FILES += \
