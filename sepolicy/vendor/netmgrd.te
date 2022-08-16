@@ -1,9 +1,11 @@
+get_prop(netmgrd, {
+    netmgrd_prop
+    radio_control_prop
+});
+
 allow netmgrd sysfs_net:dir { search };
 allow netmgrd netutils_wrapper:process { noatsecure };
 
 allow netmgrd property_socket:sock_file { write };
 
 allow netmgrd init:unix_stream_socket { connectto };
-
-get_prop(netmgrd, netmgrd_prop);
-get_prop(netmgrd, radio_control_prop);

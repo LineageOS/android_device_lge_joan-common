@@ -1,3 +1,2 @@
-allow servicemanager hal_power_default:dir { search };
-allow servicemanager hal_power_default:file r_file_perms;
+r_dir_file(servicemanager, hal_power_default);
 allow servicemanager hal_power_default:process { getattr };

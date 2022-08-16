@@ -1,6 +1,5 @@
+r_dir_file(hal_bluetooth_default, firmware_file);
 allow hal_bluetooth_default bluetooth_data_file:file { append getattr read write };
-allow hal_bluetooth_default firmware_file:dir { getattr open read search };
-allow hal_bluetooth_default firmware_file:file { getattr open read };
 
-allow hal_bluetooth_default vendor_bt_data_file:dir { write add_name search };
-allow hal_bluetooth_default vendor_bt_data_file:file { getattr read append write open create };
+allow hal_bluetooth_default vendor_bt_data_file:dir rw_dir_perms;
+allow hal_bluetooth_default vendor_bt_data_file:file create_file_perms;

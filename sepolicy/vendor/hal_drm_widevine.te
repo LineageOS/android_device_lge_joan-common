@@ -4,9 +4,6 @@ allow hal_drm_widevine proc:file { getattr open read };
 allow hal_drm_widevine media_data_file:file { getattr read write };
 
 # LG puts firmware in /persist-lg/firmware/...
-allow hal_drm_widevine persist_drm_file:dir search;
-allow hal_drm_widevine persist_drm_file:file r_file_perms;
+r_dir_file(hal_drm_widevine, persist_drm_file);
 # ... but they also leave qcoms copy in /firmware/image/
-allow hal_drm_widevine firmware_file:dir search;
-allow hal_drm_widevine firmware_file:file r_file_perms;
-allow hal_drm_widevine firmware_file:lnk_file r_file_perms;
+r_dir_file(hal_drm_widevine, firmware_file);
