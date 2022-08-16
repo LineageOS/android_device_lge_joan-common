@@ -326,6 +326,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     NfcNci \
+    nqnfcinfo \
     Tag
 
 PRODUCT_COPY_FILES += \
