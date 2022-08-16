@@ -5,8 +5,8 @@ vendor.lge.hardware.biometrics.fingerprint::ILgeBiometricsFingerprint   u:object
 vendor.lge.hardware.vss_ims::IVssIms                                    u:object_r:hal_vss_ims_hwservice:s0
 
 # NFC
-vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:nxpnfc_hwservice:s0
-vendor.nxp.nxpese::INxpEse                                              u:object_r:nxpese_hwservice:s0
+vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                                              u:object_r:hal_nfc_hwservice:s0
 
 # RIL
 vendor.qti.hardware.slmadapter::ISlmAdapter                             u:object_r:vendor_hal_slmadapter_hwservice:s0
