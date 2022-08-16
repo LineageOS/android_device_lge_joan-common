@@ -164,9 +164,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libtinyxml \
     libqservice \
-    memtrack.msm8998 \
-	vendor.display.config@2.0 \
-	vendor.display.config@2.0.vendor
+    memtrack.msm8998
 
 # DRM
 PRODUCT_PACKAGES += \
