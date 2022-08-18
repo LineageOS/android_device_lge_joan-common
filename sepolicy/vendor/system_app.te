@@ -1,4 +1,5 @@
 binder_call(system_app, {
+    hal_power_default
     vold
     wificond
 });
@@ -8,9 +9,18 @@ get_prop(system_app, {
     vendor_audio_prop
 });
 
-r_dir_file(system_app, sysfs_zram);
+r_dir_file(system_app, {
+    proc_pagetypeinfo
+    proc_vmallocinfo
+    sysfs_zram
+});
 
-allow system_app proc_pagetypeinfo:file { getattr open read };
 allow system_app sysfs_lge_fingerprint:dir r_dir_perms;
 allow system_app sysfs_lge_fingerprint:file rw_file_perms;
 allow system_app sysfs_lge_hifi_dac:file rw_file_perms;
+
+dontaudit system_app {
+    apex_service
+    system_suspend_control_service
+    system_suspend_control_internal_service
+}:service_manager find;
