@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2019 The LineageOS Project
+  ~ Copyright (C) 2022 The LineageOS Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
   -->
 
 <permissions>
-    <privapp-permissions package="org.lineageos.settings.device">
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.lineageos.settings.device.dac">
-        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+    <privapp-permissions package="com.android.hotwordenrollment.okgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
     </privapp-permissions>
 </permissions>

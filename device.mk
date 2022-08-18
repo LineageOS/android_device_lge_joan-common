@@ -388,7 +388,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/privapp-permissions-joan.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-joan.xml
+    $(DEVICE_PATH)/configs/privapp-permissions-joan.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-joan.xml \
+    $(DEVICE_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Power
 PRODUCT_PACKAGES += \
