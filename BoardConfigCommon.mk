@@ -19,6 +19,7 @@ COMMON_PATH := device/lge/joan-common
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h930_defconfig
 TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # inherit from the proprietary version
 -include vendor/lge/joan-common/BoardConfigVendor.mk
