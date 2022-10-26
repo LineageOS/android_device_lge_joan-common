@@ -271,7 +271,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2 \
     android.hardware.nfc@1.2.vendor \
     com.android.nfc_extras \
-    NfcNci \
     nqnfcinfo \
     Tag
 
