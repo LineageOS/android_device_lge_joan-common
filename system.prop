@@ -56,5 +56,8 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Voice assistant
 ro.opa.eligible_device=true
 
+# Do not block binder thread on incoming calls
+ro.telephony.block_binder_thread_on_incoming_calls=false
+
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
