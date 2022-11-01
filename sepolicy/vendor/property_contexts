@@ -5,8 +5,8 @@ ro.bluetooth.ftm_enabled					u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bt.a2dp_offload_cap			u:object_r:vendor_bluetooth_prop:s0
 
 sys.camera.pd_test.result					u:object_r:vendor_camera_prop:s0
-persist.data.rear.minfps					u:object_r:vendor_camera_prop:s0
-persist.data.front.minfps					u:object_r:vendor_camera_prop:s0
+persist.vendor.lge.data.front.minfps		u:object_r:vendor_camera_prop:s0
+persist.vendor.lge.data.rear.minfps			u:object_r:vendor_camera_prop:s0
 persist.camera.arcbeauty.					u:object_r:vendor_camera_prop:s0
 persist.vendor.lge.camera.					u:object_r:vendor_camera_prop:s0
 vendor.lge.camera.							u:object_r:vendor_camera_prop:s0

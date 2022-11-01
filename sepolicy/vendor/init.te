@@ -18,7 +18,7 @@ allow init ion_device:chr_file r_file_perms;
 allow init {
     mnt_product_file
     mpt_file
-    persist_drm_file
+    persist_lg_data_file
     sns_file
 }:dir mounton;
 

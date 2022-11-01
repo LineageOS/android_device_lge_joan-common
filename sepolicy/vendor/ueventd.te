@@ -1,1 +1,1 @@
-r_dir_file(ueventd, persist_drm_file);
+r_dir_file(ueventd, persist_lg_data_file);
