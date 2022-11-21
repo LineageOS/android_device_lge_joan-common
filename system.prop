@@ -2,9 +2,6 @@
 # system props for joan
 #
 
-# APEX
-ro.apex.updatable=true
-
 # Audio
 audio.deep_buffer.media=true
 audio.offload.video=false
