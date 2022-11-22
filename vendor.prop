@@ -128,6 +128,7 @@ ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
 # Display
+debug.sf.auto_latch_unsignaled=true
 persist.debug.wfd.enable=0
 persist.hwc.enable_vds=1
 persist.sys.wfd.virtual=0
