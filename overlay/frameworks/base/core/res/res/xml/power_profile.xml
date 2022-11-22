@@ -6,8 +6,8 @@
     <item name="wifi.on">3.8</item>
     <item name="wifi.active">350.1</item>
     <item name="wifi.scan">183.2</item>
-    <item name="dsp.audio">0.1</item>
-    <item name="dsp.video">0.1</item>
+    <item name="audio">0.1</item>
+    <item name="video">0.1</item>
     <item name="camera.flashlight">220.8</item>
     <item name="camera.avg">461.4</item>
     <item name="radio.active">145.5</item>
