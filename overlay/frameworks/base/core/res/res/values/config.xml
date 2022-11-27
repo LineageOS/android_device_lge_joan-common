@@ -569,4 +569,6 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
 
+    <!-- Enable video pause workaround when enabling/disabling the camera. -->
+     <bool name="config_useVideoPauseWorkaround">true</bool>
 </resources>
