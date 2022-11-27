@@ -144,12 +144,16 @@ vendor.display.enable_default_color_mode=1
 vendor.display.perf_hint_window=50
 vendor.display.use_layer_ext=1
 debug.renderengine.backend=skiaglthreaded
-debug.hwui.skia_atrace_enabled=false
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.uclamp.min=130
 
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # DPM
 persist.dpm.feature=0
