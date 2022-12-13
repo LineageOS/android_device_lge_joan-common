@@ -71,8 +71,8 @@ function blob_fixup() {
         ;;
     vendor/lib/hw/camera.msm8998.so)
         sed -i "s/libsensor.so/libtensor.so/g" "${2}"
-        sed -i "s/libgui.so/libfui.so/g" "${2}"
         sed -i "s/libui.so/libvi.so/g" "${2}"
+        ${PATCHELF} --replace-needed libgui.so libgui_vendor.so "${2}"
         ${PATCHELF} --remove-needed libandroid.so "${2}"
         ;;
     vendor/lib/libmpbase.so)

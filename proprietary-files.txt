@@ -90,7 +90,7 @@ vendor/firmware/crnv21.bin
 
 # Camera - pinned files are hexedited to be vndk compatible
 vendor/bin/mm-qcamera-app
-vendor/lib/hw/camera.msm8998.so|8821087ce5c7c19ec5824358b8c8c82adce0d944
+vendor/lib/hw/camera.msm8998.so|f2c3530b874d00ed6777cc90306261ef40e679dc
 vendor/lib/libactuator_bu24333gwl.so
 vendor/lib/libactuator_renesascl.so
 vendor/lib/libarcsoft_beauty_picselfie.so|86a1a8dd78a82dafc7e89822c74c66b978502542
