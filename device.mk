@@ -188,8 +188,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -276,18 +276,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0 \
-    android.hardware.keymaster@3.0.vendor
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libleymaster_messages.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libleymaster_portable.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libleymaster_messages.so \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libleymaster_portable.so
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/lib/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpuresoftleymasterdevice.so \
-    $(DEVICE_PATH)/prebuilt/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftleymasterdevice.so
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
 
 # Lights
 PRODUCT_PACKAGES += \

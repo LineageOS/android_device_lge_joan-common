@@ -88,12 +88,6 @@ function blob_fixup() {
     vendor/lib/libmmcamera_bokeh.so)
         sed -i "s/libui.so/libvi.so/g" "${2}"
         ;;
-	vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so)
-	    sed -i "s/libkeymasterdeviceutils.so/libkeymasterdeviceutil4.so/g" "${2}"
-		;;
-	vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so)
-	    sed -i "s/libkeymasterdeviceutils.so/libkeymasterdeviceutil4.so/g" "${2}"
-		;;
     esac
 }
 
