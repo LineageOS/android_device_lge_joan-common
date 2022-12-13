@@ -1,6 +1,3 @@
-# Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/lge/joan/joan-vendor.mk)
-
 DEVICE_PATH := device/lge/joan
 
 PRODUCT_SOONG_NAMESPACES += \
@@ -535,3 +532,6 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
+
+# Inherit proprietary blobs
+$(call inherit-product-if-exists, vendor/lge/joan/joan-vendor.mk)
