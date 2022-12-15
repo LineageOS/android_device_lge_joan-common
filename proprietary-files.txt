@@ -1,5 +1,4 @@
 # All unpinned blobs below are from H930 31a
-# All pinned blobs, unless specified otherwise, are from Q910UM 30l
 
 # Audio - Firmware
 vendor/firmware/Tfa9872.cnt
@@ -524,7 +523,7 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
-# Graphics - Firmware
+# Graphics (Firmware)
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
@@ -551,7 +550,7 @@ vendor/firmware/a540_gpmu.fw2
 vendor/firmware/a540_zap.b00
 vendor/firmware/a540_zap.b02
 
-# Graphics - Vulkan
+# Graphics (Vulkan)
 vendor/lib/hw/vulkan.msm8998.so
 vendor/lib64/hw/vulkan.msm8998.so
 
