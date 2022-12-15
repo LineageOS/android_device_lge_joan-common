@@ -485,7 +485,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libsensor-vendor \
-    libgui-vendor \
+    libgui_vendor \
     libui-vendor \
     libstdc++.vendor
 
