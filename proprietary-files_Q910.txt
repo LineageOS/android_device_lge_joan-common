@@ -103,11 +103,11 @@ vendor/lib64/libtinyxml2_1.so
 
 # Display (SDM) - from phoenix_sprout - Q910UM 30l
 vendor/lib/libsdedrm.so|93d9acc2a9a857f6e36cf0db348977eedfeec9cb
-vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
+-vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
 vendor/lib/libsdmcore.so|10b5aa9cacea5e99b25a27447db287768a7f9600
 vendor/lib/libsdmextension.so|b81e810cc6990467ff805198223d5241184da61b
 vendor/lib64/libsdedrm.so|8df03ed75d59ad0ae25dd1daa5ba9298a0e4d9ae
-vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
+-vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
 vendor/lib64/libsdmcore.so|4a30a656b8cd9c9174107ff06098ee3f2df45a01
 vendor/lib64/libsdmextension.so|69028df8b08ded29b835453b84e9a9c4fea958d1
 
