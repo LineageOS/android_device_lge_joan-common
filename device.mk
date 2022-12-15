@@ -383,8 +383,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libclang_rt.ubsan_standalone-aarch64-android
+    libqti_vndfwk_detect.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
