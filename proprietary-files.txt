@@ -1,4 +1,5 @@
-# All unpinned blobs below are from H930 31a
+# All unpinned blobs below are from joan H930 31a
+# PKQ1.190414.001
 
 # Audio (Firmware)
 vendor/firmware/Tfa9872.cnt
@@ -453,6 +454,29 @@ vendor/etc/camera/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev5_S_data2.bin
 
 # Camera (Postprocessing)
 vendor/lib/libdepthmapwrapper.so
+
+# Display (Postprocessing)
+lib/vendor.display.color@1.0.so:vendor/lib/vendor.display.color@1.0.so
+lib/vendor.display.color@1.1.so:vendor/lib/vendor.display.color@1.1.so
+lib/vendor.display.color@1.2.so:vendor/lib/vendor.display.color@1.2.so
+lib/vendor.display.postproc@1.0.so:vendor/lib/vendor.display.postproc@1.0.so
+lib64/vendor.display.color@1.0.so:vendor/lib64/vendor.display.color@1.0.so
+lib64/vendor.display.color@1.1.so:vendor/lib64/vendor.display.color@1.1.so
+lib64/vendor.display.color@1.2.so:vendor/lib64/vendor.display.color@1.2.so
+lib64/vendor.display.postproc@1.0.so:vendor/lib64/vendor.display.postproc@1.0.so
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/mm-pp-dpps
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libmm-hdcpmgr.so
+
+# Display (QDUtils)
+lib/vendor.qti.hardware.qdutils_disp@1.0.so:vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+lib64/vendor.qti.hardware.qdutils_disp@1.0.so:vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 
 # DSP
 vendor/etc/scve/facereco/gModel.dat
