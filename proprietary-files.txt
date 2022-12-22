@@ -675,9 +675,6 @@ vendor/etc/perf/perf-profile3.conf
 vendor/etc/perf/perf-profile4.conf
 vendor/etc/perf/perf-profile5.conf
 vendor/etc/perf/perf-profile6.conf
-vendor/etc/thermal-engine-8998.conf
-vendor/etc/thermal-engine-default.conf
-vendor/etc/thermal-engine.conf
 
 # Postprocessing
 vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
@@ -685,6 +682,20 @@ vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
 # Sensors
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
+
+# Thermal
+vendor/bin/thermal-engine
+vendor/etc/thermal-engine-8998.conf
+vendor/etc/thermal-engine-default.conf
+vendor/etc/thermal-engine.conf
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
+
+# Time services
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+vendor/lib64/libtime_genoff.so
 
 # Wifi
 vendor/etc/wifi/bdwlan.bin
