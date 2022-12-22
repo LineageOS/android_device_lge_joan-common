@@ -3975,7 +3975,7 @@ case "$target" in
         # LGE setup conflicts with QCT. Then block it
         # configure_memory_parameters
         # lge hswap tune lmk minfree by mem size
-        configure_hswap_minfree
+        # configure_hswap_minfree
     ;;
 esac
 
