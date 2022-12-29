@@ -448,6 +448,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.joan
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    TimeKeep \
+    timekeep
+
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2

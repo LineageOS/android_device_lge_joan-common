@@ -23,3 +23,6 @@ vendor.lge.wlan.earpiece					u:object_r:vendor_audio_prop:s0
 fpc_kpi										u:object_r:vendor_fp_prop:s0
 sdm.disable_hdr_lut_gen						u:object_r:vendor_display_prop:s0
 ro.lge.window_color							u:object_r:vendor_sensors_prop:s0
+
+# vendor_timekep_prop
+persist.vendor.timeadjust              u:object_r:vendor_timekeep_prop:s0

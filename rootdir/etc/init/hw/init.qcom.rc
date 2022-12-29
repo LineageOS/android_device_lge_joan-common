@@ -148,7 +148,6 @@ on boot
     mkdir /persist/bluetooth 0770 bluetooth bluetooth
     mkdir /persist/misc 0770 system system
     mkdir /persist/alarm 0770 system system
-    mkdir /persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
 
     #Create NETMGR daemon socket area
@@ -1141,12 +1140,6 @@ service logdumpd /system/bin/logcat -b all -v threadtime -D -w /dev/block/bootde
 # Logdumpd is enabled only for userdebug non-perf build
 on property:ro.logdumpd.enabled=1
     start logdumpd
-
-service time_daemon /system/vendor/bin/time_daemon
-    class main
-    user system
-    group system
-    capabilities SYS_TIME
 
 service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
     class late_start
