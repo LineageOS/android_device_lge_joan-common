@@ -132,7 +132,6 @@ ro.vendor.qti.core_ctl_max_cpu=4
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 persist.debug.wfd.enable=0
-persist.hwc.enable_vds=1
 persist.sys.wfd.virtual=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
