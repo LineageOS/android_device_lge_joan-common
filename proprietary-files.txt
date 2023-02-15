@@ -96,12 +96,12 @@ vendor/lib/libSJFingerDetect.so
 vendor/lib/libSJVideoNR.so
 vendor/lib/libactuator_bu24333gwl.so
 vendor/lib/libactuator_renesascl.so
-vendor/lib/libarcsoft_beauty_picselfie.so|86a1a8dd78a82dafc7e89822c74c66b978502542
+vendor/lib/libarcsoft_beauty_picselfie.so
 vendor/lib/libarcsoft_object_tracking.so
 vendor/lib/libarcsoft_picselfie_algorithm.so
 vendor/lib/libbwfocuspeaking.so
 vendor/lib/libcinemaeffect.so
-vendor/lib/libfilm_emulation.so|ceb84d719e807b74dd510146223d457f9371408c
+vendor/lib/libfilm_emulation.so
 vendor/lib/libfilm_emulation_symphony.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libhal_dbg.so
@@ -216,7 +216,7 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
-vendor/lib/libmpbase.so|fe013f2260768aad784b6ce591f70267c4a1104c
+vendor/lib/libmpbase.so
 vendor/lib/libois_bu24333gwl.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
