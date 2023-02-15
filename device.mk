@@ -477,7 +477,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsensor-vendor \
     libgui_vendor \
-    libui-vendor \
+    libui_shim.vendor \
     libstdc++.vendor
 
 # Wifi

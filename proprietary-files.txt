@@ -88,9 +88,9 @@ etc/firmware/rampatch_tlv_3.2.tlv:vendor/etc/firmware/rampatch_tlv_3.2.tlv
 vendor/firmware/crbtfw21.tlv
 vendor/firmware/crnv21.bin
 
-# Camera (pinned files are hexedited to be vndk compatible)
+# Camera
 vendor/bin/mm-qcamera-app
-vendor/lib/hw/camera.msm8998.so|f2c3530b874d00ed6777cc90306261ef40e679dc
+vendor/lib/hw/camera.msm8998.so
 vendor/lib/libAutoContrast.so
 vendor/lib/libSJFingerDetect.so
 vendor/lib/libSJVideoNR.so
@@ -131,7 +131,7 @@ vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera_bokeh.so|862b13e368861ad6b7c996befe2b731cbe5882cb
+vendor/lib/libmmcamera_bokeh.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
 vendor/lib/libmmcamera_dummyalgo.so

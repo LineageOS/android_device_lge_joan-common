@@ -71,7 +71,7 @@ function blob_fixup() {
         ;;
     vendor/lib/hw/camera.msm8998.so)
         sed -i "s/libsensor.so/libtensor.so/g" "${2}"
-        sed -i "s/libui.so/libvi.so/g" "${2}"
+        ${PATCHELF} --replace-needed libui.so libui_shim.so "${2}"
         ${PATCHELF} --replace-needed libgui.so libgui_vendor.so "${2}"
         ${PATCHELF} --remove-needed libandroid.so "${2}"
         ;;
@@ -86,7 +86,7 @@ function blob_fixup() {
         ${PATCHELF} --remove-needed libjnigraphics.so "${2}"
         ;;
     vendor/lib/libmmcamera_bokeh.so)
-        sed -i "s/libui.so/libvi.so/g" "${2}"
+        ${PATCHELF} --replace-needed libui.so libui_shim.so "${2}"
         ;;
     esac
 }
