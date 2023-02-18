@@ -21,10 +21,6 @@ lib64/com.qualcomm.qti.ant@1.0.so:vendor/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
-# AptX - from crosshatch - QP1A.190711.020
-lib64/libaptXHD_encoder.so:product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-lib64/libaptX_encoder.so:product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-
 # Audio
 vendor/lib/hw/audio.primary.msm8998.so
 vendor/lib/soundfx/libasphere.so
