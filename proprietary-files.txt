@@ -1,5 +1,5 @@
 # All unpinned blobs below are from joan H930 31a
-# PKQ1.190414.001
+# joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys 
 
 # Audio (Firmware)
 vendor/firmware/Tfa9872.cnt

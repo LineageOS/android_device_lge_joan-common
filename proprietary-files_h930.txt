@@ -1,4 +1,0 @@
-# Graphics (Firmware) - from joan - PKQ1.190414.001
-vendor/firmware/a540_zap.b01:vendor/firmware/H930/a540_zap.b01|e9f83d8919ee02e9814fb9f8f0061e9c4e230c48
-vendor/firmware/a540_zap.elf:vendor/firmware/H930/a540_zap.elf|77226162eb5be7552503b791c664b9d1d9f73ce8
-vendor/firmware/a540_zap.mdt:vendor/firmware/H930/a540_zap.mdt|8383e87e00bb1f7be238c9831c1633b3ae9c6b83

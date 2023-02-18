@@ -8,9 +8,6 @@
 
 set -e
 
-DEVICE=joan
-VENDOR=lge
-
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -27,11 +24,19 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
+ONLY_COMMON=
+ONLY_TARGET=
 KANG=
 SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
+        --only-common )
+                ONLY_COMMON=true
+                ;;
+        --only-target )
+                ONLY_TARGET=true
+                ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
                 ;;
@@ -84,62 +89,42 @@ function blob_fixup() {
     esac
 }
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+if [ -z "${ONLY_TARGET}" ]; then
+    # Initialize the helper for common device
+    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
-# Do not clean the vendor folder before fetching other blobs
-CLEAN_VENDOR=false
+    # Do not clean the vendor folder before fetching other blobs
+    CLEAN_VENDOR=false
 
-# Reinitialize the helper for Q910 blobs
-echo "Gathering Q910 blobs"
-echo "Please provide the path to Q910 blobs"
-echo -n "Path:"
-read SRC
+    # Reinitialize the helper for Q910 blobs
+    echo "Gathering Q910 blobs"
+    echo "Please provide the path to Q910 blobs"
+    echo -n "Path:"
+    read SRC2
 
-if [ -z "${SRC}" ]; then
-    SRC="adb"
+    if [ -z "${SRC2}" ]; then
+        SRC2="adb"
+    fi
+
+    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+
+    extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC2}" ${KANG} --section "${SECTION}"
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
+    # Reinitialize the helper for device
+    source "${MY_DIR}/../${DEVICE}/extract-files.sh"
 
-extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC}" ${KANG} --section "${SECTION}"
+    # Default to sanitizing the vendor folder before extraction
+    # was set to false during common extraction as it pulls from two different
+    # devices
+    CLEAN_VENDOR=true
 
-# Reinitialize the helper for H930 blobs
-echo "Gathering H930 blobs for unified build."
-echo "Please provide the path to H930 blobs."
-echo "or hit enter to attempt fetching from a connected device, adb mode."
-echo "You may run this again if fail or skip."
-echo "Without H930 blobs this build will not be unified."
-echo -n "Path:"
-read SRC
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
-if [ -z "${SRC}" ]; then
-    SRC="adb"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
-
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-extract "${MY_DIR}/proprietary-files_h930.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
-# Reinitialize the helper for H932 blobs
-echo "Gathering H932 blobs for unified build."
-echo "Please provide the path to H932 blobs."
-echo "or hit enter to attempt fetching from a connected device, adb mode."
-echo "You may run this again if fail or skip."
-echo "Without H932 blobs this build will not run on T-Mobile H932 devices."
-echo -n "Path:"
-read SRC
-
-if [ -z "${SRC}" ]; then
-    SRC="adb"
-fi
-
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-extract "${MY_DIR}/proprietary-files_h932.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
