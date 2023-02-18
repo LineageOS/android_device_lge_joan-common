@@ -480,7 +480,6 @@ vendor/bin/qseecomd
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libtzdrmgenprov.so
@@ -490,7 +489,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
