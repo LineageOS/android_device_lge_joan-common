@@ -4,12 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/lge/joan
-
-TARGET_OTA_ASSERT_DEVICE := v30,joan,h930,h932
+COMMON_PATH := device/lge/joan-common
 
 # inherit from the proprietary version
-include vendor/lge/joan/BoardConfigVendor.mk
+include vendor/lge/joan-common/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm64
@@ -44,7 +42,7 @@ AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
 # Audio - LGE
-TARGET_DAC_PLUGIN_INCLUDE_DIR := $(DEVICE_PATH)/include
+TARGET_DAC_PLUGIN_INCLUDE_DIR := $(COMMON_PATH)/include
 BOARD_LGE_HAS_EXT_AMPLIFIER := true
 BOARD_LGE_HAS_HIFI_QUAD_DAC := true
 
@@ -84,14 +82,14 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/framework_compatibility_matrix.xml \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(COMMON_PATH)/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MATRIX_FILE := \
+DEVICE_MATRIX_FILE += \
     hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_lge_msm8998
@@ -115,7 +113,7 @@ TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
+$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(COMMON_PATH)/include)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
@@ -138,21 +136,18 @@ TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
 # Recovery
 BOOTLOADER_MESSAGE_OFFSET := 128
 TARGET_RECOVERY_DENSITY := xxxhdpi
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.joan
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.joan
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 include hardware/lge/sepolicy/SEPolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true

@@ -10,14 +10,12 @@ import os
 import sys
 from hashlib import sha1
 
-device='joan'
+device='joan-common'
 vendor='lge'
 
 files = [
     "proprietary-files.txt",
-    "proprietary-files_phoenix.txt",
-    "proprietary-files_h930.txt",
-    "proprietary-files_h932.txt"
+    "proprietary-files_phoenix.txt"
 ]
 
 def cleanup(lines):
