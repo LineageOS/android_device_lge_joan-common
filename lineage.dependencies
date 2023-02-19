@@ -8,10 +8,6 @@
     "target_path": "hardware/lge",
   },
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-  },
-  {
     "repository": "android_hardware_sony_timekeep",
     "target_path": "hardware/sony/timekeep"
   }
