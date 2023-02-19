@@ -4,10 +4,6 @@
     "target_path": "kernel/lge/msm8998",
   },
   {
-    "repository": "android_device_lge_common",
-    "target_path": "device/lge/common",
-  },
-  {
     "repository": "android_hardware_lge",
     "target_path": "hardware/lge",
   },

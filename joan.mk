@@ -1,7 +1,8 @@
 COMMON_PATH := device/lge/joan-common
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/lge/joan-common
+    $(COMMON_PATH) \
+    hardware/lge
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay \

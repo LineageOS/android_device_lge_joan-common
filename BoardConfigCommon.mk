@@ -23,9 +23,6 @@ TARGET_KERNEL_VERSION := 4.4
 # inherit from the proprietary version
 -include vendor/lge/joan-common/BoardConfigVendor.mk
 
-# inherit from common lge
--include device/lge/common/BoardConfigCommon.mk
-
 # Platform
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -199,6 +196,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include hardware/lge/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
