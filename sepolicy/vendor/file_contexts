@@ -24,7 +24,6 @@
 
 /(vendor|system/vendor)/bin/timekeep											u:object_r:timekeep_exec:s0
 
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.joan					u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan				u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine				u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.joan				u:object_r:hal_lineage_livedisplay_qti_exec:s0
