@@ -1,5 +1,5 @@
 # All unpinned blobs below are from phoenix_sprout Q910UM 40c
-# phoenix_lao_com-user 11 RKQ1.201123.002 211181009fda7 release-keys 
+# phoenix_lao_com-user 11 RKQ1.201123.002 21274101794d9 release-keys
 
 # ADSP / CDSP / MDSP / SDSP
 vendor/bin/adsprpcd
