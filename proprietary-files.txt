@@ -84,7 +84,6 @@ vendor/firmware/crnv21.bin
 
 # Camera
 vendor/bin/mm-qcamera-app
-vendor/lib/hw/camera.msm8998.so
 vendor/lib/libAutoContrast.so
 vendor/lib/libSJFingerDetect.so
 vendor/lib/libSJVideoNR.so
