@@ -107,6 +107,7 @@ PRODUCT_PACKAGES += \
 	android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    camera.msm8998 \
     camera.device@3.4-impl \
     camera.device@3.4-external-impl \
     vendor.qti.hardware.camera.device@1.0 \
