@@ -349,3 +349,8 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # sys-fs usb
 /sys/class/android_usb/android0    lock    0664    system    system
+
+# Charger
+/sys/class/power_supply/battery  battery_charging_enabled   0660    system  system
+/sys/class/power_supply/battery  charging_enabled           0660    system  system
+/sys/class/power_supply/battery  input_suspend              0660    system  system
