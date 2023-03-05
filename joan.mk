@@ -399,6 +399,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/recovery/root/init.recovery.joan.rc:root/init.recovery.joan.rc
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
