@@ -8,6 +8,8 @@
 /mnt/vendor/mpt(/.*)?															u:object_r:mpt_file:s0
 /vendor/mpt(/.*)?																u:object_r:mpt_file:s0
 
+/firmware(/.*)?                                                                 u:object_r:firmware_file:s0
+
 /mnt/vendor/persist-lg(/.*)?													u:object_r:persist_lg_data_file:s0
 /mnt/vendor/persist-lg/data/widevine(/.*)?										u:object_r:persist_drm_file:s0
 /mnt/vendor/persist-lg/firmware(/.*)?											u:object_r:persist_lg_firmware_file:s0
