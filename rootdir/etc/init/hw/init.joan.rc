@@ -23,7 +23,7 @@ on post-fs
 on post-fs-data
     # NFC: create data/nfc for nv storage
     mkdir /data/vendor/nfc 0770 nfc nfc
-
+    exec u:r:qti_init_shell:s0 -- /vendor/bin/init.joan.wlan.sh
 
 on early-boot
 #	exec u:r:qti_init_shell:s0 -- /vendor/bin.sh /display_port_permission.sh
