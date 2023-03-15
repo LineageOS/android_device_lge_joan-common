@@ -184,6 +184,9 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware
+
 # Power
 TARGET_RPM_MASTER_STAT := "/sys/kernel/debug/rpm_master_stats"
 TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
