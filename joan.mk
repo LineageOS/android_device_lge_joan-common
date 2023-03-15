@@ -220,6 +220,7 @@ PRODUCT_PACKAGES += \
     init.baseband.sh \
     init.class_main.sh \
     init.joan.hdmi.sh \
+    init.joan.wlan.sh \
     init.lge.usb.lao.sh \
     init.qcom.class_core.sh \
     init.qcom.post_boot.sh \

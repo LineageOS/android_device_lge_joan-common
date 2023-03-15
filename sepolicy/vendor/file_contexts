@@ -35,4 +35,5 @@
 /(vendor|system/vendor)/bin/hw_vari\.sh											u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.baseband\.sh									u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.joan\.hdmi\.sh								u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/init\.joan\.wlan\.sh								u:object_r:qti_init_shell_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.qseecomd\.sh								u:object_r:qti_init_shell_exec:s0
