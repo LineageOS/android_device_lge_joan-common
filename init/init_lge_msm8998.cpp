@@ -73,6 +73,7 @@ void init_target_properties()
     std::string cmdline;
     bool unknownDevice = true;
     bool dualSim = false;
+    bool isRecovery = false;
 
     android::base::ReadFileToString("/proc/cmdline", &cmdline);
 
@@ -86,6 +87,8 @@ void init_target_properties()
             } else if(pieces[0].compare("lge.dsds") == 0 && pieces[1].compare("dsds") == 0)
             {
                 dualSim = true;
+            } else if(pieces[0].compare("lge.bootreason") == 0 && pieces[1].compare("RECOVERY_MODE") == 0) {
+                isRecovery = true;
             }
         }
     }
@@ -105,6 +108,9 @@ void init_target_properties()
     property_override("ro.product.product.model", model);
     property_override("ro.product.system.model", model);
     property_override("ro.product.vendor.model", model);
+
+    if(isRecovery && model.find("932") != std::string::npos)
+        property_override("ro.product.device", "h932");
 }
 
 void vendor_load_properties() {
