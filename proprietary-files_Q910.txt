@@ -114,16 +114,6 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# ESE
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib/vendor.qti.esepowermanager@1.1.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
-
 # GPS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
@@ -224,14 +214,6 @@ vendor/etc/hbtp/qtc800t.bin
 vendor/lib/libfastrpc_utf_stub.so
 vendor/lib64/libfastrpc_utf_stub.so
 
-# IOP
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-
 # Latency
 system_ext/framework/vendor.qti.latency-V2.0-java.jar
 system_ext/lib/vendor.qti.hardware.data.latency@1.0.so
@@ -294,35 +276,6 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/libvpphvx.so
-
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/lib/libdisplayconfig.qti.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.power.pasrmanager@1.0.so
-vendor/lib64/libadaptlaunch.so
-vendor/lib64/libappclassifier.so
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libgameoptfeature.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
-vendor/lib64/libmeters.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
