@@ -1,4 +1,4 @@
-# All unpinned blobs below are from phoenix_sprout Q910UM 40c
+# All unpinned blobs below are from phoenix_sprout Q910UM 40i
 # phoenix_lao_com-user 11 RKQ1.201123.002 21274101794d9 release-keys
 
 # ADSP / CDSP / MDSP / SDSP
@@ -7,6 +7,7 @@ vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
+vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
@@ -14,6 +15,7 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
+vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
@@ -678,22 +680,6 @@ vendor/lib/libmiracast.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/libmiracast.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-
-# Snapdragon Computer Vision Engine
-vendor/lib/libfastcvopt.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # Wifi
 vendor/bin/cnss-daemon
