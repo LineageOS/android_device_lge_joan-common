@@ -103,7 +103,7 @@ on post-fs-data
     mkdir /vendor/persist-lg/rtnlastdate 0770 system radio
 
     #Create camera dir for EEPROM data
-    mkdir mnt/vendor/persist-lg/camera 0771 cameraserver radio
+    mkdir /mnt/vendor/persist-lg/camera 0771 cameraserver radio
 
     #Create Touch self test folder
     mkdir /data/vendor/touch 0771 system system
