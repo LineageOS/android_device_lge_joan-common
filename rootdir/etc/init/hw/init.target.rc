@@ -82,11 +82,6 @@ on post-fs
 on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
 #    mkdir /data/misc/qvr 0770 system system
-# Reimplement LGE's symlinks without using their script
-    symlink /vendor/etc/wifi/bdwlan.bin /mnt/vendor/persist-lg/wifi/qcom/bdwlan_cache.bin
-    symlink /vendor/etc/wifi/bdwlan_ch0.bin /mnt/vendor/persist-lg/wifi/qcom/bdwlan_ch0_cache.bin
-    symlink /vendor/etc/wifi/bdwlan_ch1.bin /mnt/vendor/persist-lg/wifi/qcom/bdwlan_ch1_cache.bin
-    symlink /vendor/etc/wifi/WCNSS_qcom_cfg.ini /mnt/vendor/persist-lg/wifi/qcom/WCNSS_qcom_cache_cfg.ini
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
