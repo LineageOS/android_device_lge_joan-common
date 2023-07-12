@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e08e678_c2f150d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2023-07-12T05:16:06Z",
+      "side": 1,
+      "message": "\u003e you sure it\u0027s not just: https://github.com/LineageOS/android_device_lge_msm8996-common/commit/6c3ec51079f854cf135daaf1ccb36344259924e6 ?\n\nSeems to be set in init.qcom.post_boot.sh.",
+      "revId": "ac9e03ae8548b669d8343b11253bf9bdf257ef8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
