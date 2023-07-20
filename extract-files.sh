@@ -108,6 +108,8 @@ if [ -z "${ONLY_TARGET}" ]; then
     # Don't clean vendor blobs in common when extracting from Q910
     setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true false
 
+    # HACK: don't reuse already extracted content
+    EXTRACT_STATE=-1
     extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC2}" ${KANG} --section "${SECTION}"
 fi
 
@@ -116,6 +118,8 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/propriet
     source "${MY_DIR}/../../${VENDOR}/${DEVICE}/extract-files.sh"
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
+    # HACK: don't reuse already extracted content
+    EXTRACT_STATE=-1
     extract "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
