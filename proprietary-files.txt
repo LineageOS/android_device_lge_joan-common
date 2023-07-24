@@ -1,5 +1,5 @@
 # All unpinned blobs below are from joan H930 31a
-# joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys 
+# joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
 
 # Audio (Firmware)
 vendor/firmware/Tfa9872.cnt
@@ -652,14 +652,14 @@ vendor/lib64/libhdr_tm.so|1e74de5b505c8f742f1fb0379725ec9f5fd53282
 
 # Graphics (SDM) - from phoenix_sprout - phoenix_lao_com-user 10 QKQ1.190918.001 202681220e953 release-keys
 vendor/lib/libsdedrm.so|93d9acc2a9a857f6e36cf0db348977eedfeec9cb
+-vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
 vendor/lib64/libqseed3.so|24ae4dfe5d9fa27a858b64dfafd1c713da6e6fde
 vendor/lib64/libsdedrm.so|8df03ed75d59ad0ae25dd1daa5ba9298a0e4d9ae
 vendor/lib64/libsdm-color.so|ed022cfcc1546c11b82991986e0a938464400858
 vendor/lib64/libsdm-diag.so|6eb99b83036f917070393fa067eaebc50a5ff307
+-vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
 vendor/lib64/libsdmextension.so|69028df8b08ded29b835453b84e9a9c4fea958d1
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
--vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
--vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
 
 # Graphics (Vulkan) - from phoenix_sprout - phoenix_lao_com-user 10 QKQ1.190918.001 202681220e953 release-keys
 vendor/lib/hw/vulkan.msm8998.so|1f1e27bf3254cebbc1c0aa961c83a67f2ba8aa66
@@ -698,6 +698,7 @@ vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so
 
 # Perf
+vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/perf-profile2.conf
@@ -705,7 +706,6 @@ vendor/etc/perf/perf-profile3.conf
 vendor/etc/perf/perf-profile4.conf
 vendor/etc/perf/perf-profile5.conf
 vendor/etc/perf/perf-profile6.conf
-vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
