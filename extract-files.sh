@@ -93,22 +93,7 @@ if [ -z "${ONLY_TARGET}" ]; then
     setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-
-    # Reinitialize the helper for Q910 blobs
-    echo "Gathering Q910 blobs"
-    echo "Please provide the path to Q910 blobs"
-    echo -n "Path:"
-    read SRC2
-
-    if [ -z "${SRC2}" ]; then
-        SRC2="adb"
-    fi
-
-    # Initialize the helper
-    # Don't clean vendor blobs in common when extracting from Q910
-    setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true false
-
-    extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC2}" ${KANG} --section "${SECTION}"
+    extract "${MY_DIR}/proprietary-files_Q910.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
