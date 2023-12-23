@@ -15,3 +15,4 @@ allow thermal-engine sysfs_batteryinfo:dir r_dir_perms;
 allow thermal-engine sysfs_usb_supply:dir r_dir_perms;
 allow thermal-engine sysfs_usb_supply:file rw_file_perms;
 allow thermal-engine sysfs_usb_supply:lnk_file r_file_perms;
+allow thermal-engine sysfs_lge_power:file rw_file_perms;
