@@ -276,7 +276,7 @@ PRODUCT_PACKAGES += \
 
 # Live Display
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.joan
+    vendor.lineage.livedisplay@2.0-service.lge
 
 # Lineage Health
 PRODUCT_PACKAGES += \
