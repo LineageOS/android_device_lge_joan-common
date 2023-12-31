@@ -199,6 +199,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 # Recovery
 BOOTLOADER_MESSAGE_OFFSET := 128
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.joan
+TARGET_RECOVERY_DENSITY := xxxhdpi
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
