@@ -392,12 +392,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     librmnetctl \
     libandroid_net \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2 \
+    android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor \
     libavservices_minijail.vendor \
@@ -443,6 +441,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \

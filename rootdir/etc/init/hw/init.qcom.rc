@@ -140,9 +140,6 @@ on boot
     mkdir /persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
 
-    #Create NETMGR daemon socket area
-    mkdir /dev/socket/netmgr 0750 radio radio
-
     setprop wifi.interface wlan0
 
 #   Define TCP buffer sizes for various networks
@@ -152,6 +149,9 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
     chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
+
+    start vendor.qcrild
+    start vendor.qcrild2
 
     setprop ro.telephony.call_ring.multiple false
 
@@ -278,17 +278,9 @@ on post-fs-data
     mkdir /data/vendor/port_bridge 0770 radio radio
     chmod 0770 /data/vendor/port_bridge
 
-    #create netmgr log dir
-    mkdir /data/vendor/netmgr 0770 radio radio
-    chmod 0770 /data/vendor/netmgr
-
     #create ipacm log dir
     mkdir /data/vendor/ipa 0770 radio radio
     chmod 0770 /data/vendor/ipa
-
-    #Create QTI dir for logs
-    mkdir /data/vendor/dataqti 0770 radio radio
-    chmod 0770 /data/vendor/dataqti
 
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
@@ -585,10 +577,6 @@ service vendor.qmuxd /system/vendor/bin/qmuxd
     group radio audio bluetooth gps nfc diag
     disabled
 
-service vendor.netmgrd /system/vendor/bin/netmgrd
-    class main
-    disabled
-
 service vendor.ipacm-diag /system/vendor/bin/ipacm-diag
     class main
     user radio
@@ -600,12 +588,6 @@ service vendor.ipacm /system/vendor/bin/ipacm
     class main
     user radio
     group radio inet
-    disabled
-
-service vendor.dataqti /system/vendor/bin/qti
-    class main
-    user radio
-    group radio oem_2901 diag usb net_admin
     disabled
 
 service vendor.dataadpl /system/vendor/bin/adpl
@@ -625,10 +607,6 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
     user system
     group system
     disabled
-
-on property:ro.vendor.use_data_netmgrd=false
-    # netmgr not supported on specific target
-    stop vendor.netmgrd
 
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
@@ -807,20 +785,6 @@ service battery_monitor /system/bin/battery_monitor
     user system
     group system
     disabled
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio log readproc wakelock
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
-
-service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio log readproc wakelock
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service profiler_daemon /system/bin/profiler_daemon
     class late_start

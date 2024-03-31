@@ -64,9 +64,14 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        product/etc/permissions/vendor.qti.hardware.data.connection-V1.*-java.xml)
+        system_ext/lib64/lib-imscamera.so)
             [ "$2" = "" ] && return 0
-            sed -i "s/\"2\.0/\"1\.0/g" "${2}"
+            ${PATCHELF} --add-needed libgui_shim.so "${2}"
+            ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            [ "$2" = "" ] && return 0
+            ${PATCHELF} --add-needed libgui_shim.so "${2}"
+            ${PATCHELF} --replace-needed libqdMetaData.so libqdMetaData.system.so "${2}"
             ;;
         vendor/lib/hw/camera.msm8998.so)
             [ "$2" = "" ] && return 0
