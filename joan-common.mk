@@ -192,7 +192,25 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
+    gnss@2.0-base.policy \
+    gnss@2.0-xtra-daemon.policy \
+    gnss@2.0-xtwifi-client.policy \
+    gnss@2.0-xtwifi-inet-agent.policy \
+    libbatching \
+    libgeofencing \
+    libgnss \
+    libgnsspps \
+    libgps.utils \
+    liblocation_api \
+    libloc_core \
+    libsynergy_loc_api
+
+# GNSS configs
+PRODUCT_PACKAGES += \
     flp.conf \
+    gnss_antenna_info.conf \
     gps.conf
 
 # HDR
