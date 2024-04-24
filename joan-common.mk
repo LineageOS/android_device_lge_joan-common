@@ -190,10 +190,10 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# GPS 
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    $(COMMON_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
+# GPS
+PRODUCT_PACKAGES += \
+    flp.conf \
+    gps.conf
 
 # HDR
 PRODUCT_COPY_FILES += \
