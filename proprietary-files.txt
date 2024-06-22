@@ -550,10 +550,6 @@ vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 
-# NFC - from joan - H93031a - joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
-vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so|dc40a6c1ec99a7ebc37cca8c2cbcdcabe746c1af
-vendor/firmware/libpn548ad_fw_64.so:vendor/lib64/libpn548ad_fw_64.so|8d6baa854d65d4326d201c18e63e4ecac704c71d
-
 # Postprocessing
 vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
 

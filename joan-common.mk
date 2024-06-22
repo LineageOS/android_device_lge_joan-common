@@ -301,17 +301,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2 \
     android.hardware.nfc@1.2.vendor \
-    android.hardware.nfc@1.1-service \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     NfcNci \
     nqnfcinfo \
     Tag
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    $(COMMON_PATH)/configs/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # OMX
 PRODUCT_PACKAGES += \
