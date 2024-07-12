@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8d1bdad_ee571f5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-07-12T09:13:32Z",
+      "side": 1,
+      "message": "joan doesn\u0027t need dynamic partitions whatsoever due to its mega-size system partition, but it was still a fun idea.\n\nMaybe it\u0027ll happen one day just for the sake of having real Treble.",
+      "revId": "7a125bf65503324d6efb356216f33cacb902e633",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
