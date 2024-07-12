@@ -391,6 +391,9 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Radio
 PRODUCT_PACKAGES += \
     librmnetctl \

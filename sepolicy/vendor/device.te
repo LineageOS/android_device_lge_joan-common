@@ -2,3 +2,6 @@ type drm_block_device, dev_type;
 type mpt_block_device, dev_type;
 type qni_block_device, dev_type;
 type sns_block_device, dev_type;
+
+# Block devices
+typeattribute system_block_device super_block_device_type;
