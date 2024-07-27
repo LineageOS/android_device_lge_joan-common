@@ -129,6 +129,7 @@ ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
 # Display
+debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 persist.debug.wfd.enable=0
 persist.hwc.enable_vds=1
@@ -139,15 +140,9 @@ ro.opengles.version=196610
 ro.vendor.display.cabl=2
 sdm.debug.disable_partial_split=1
 sdm.perf_hint_window=50
-vendor.display.disable_scaler=1
 vendor.display.enable_default_color_mode=1
 vendor.display.perf_hint_window=50
 vendor.display.use_layer_ext=1
-
-# Disable Skia tracing by default
-debug.hwui.skia_atrace_enabled=false
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
 
 # DPM
 persist.dpm.feature=0
@@ -247,18 +242,14 @@ ro.soc.model=MSM8998
 persist.sys.binary_xml=false
 
 # SurfaceFlinger
-debug.sf.auto_latch_unsignaled=true
 debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_app_phase_offset_ns=15000000
 debug.sf.early_gl_phase_offset_ns=3000000
 debug.sf.early_phase_offset_ns=1500000
-debug.sf.layer_caching_active_layer_timeout_ms=1000
-ro.surface_flinger.enable_layer_caching=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 ro.surface_flinger.protected_contents=true
-ro.surface_flinger.uclamp.min=130
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
