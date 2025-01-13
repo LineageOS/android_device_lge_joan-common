@@ -197,11 +197,6 @@ vendor/bin/pd-mapper|6d6f81b711402cb2d4a3b6882d83f4176663a88e
 vendor/lib64/libpdmapper.so|8616114fee81517d53292b7c71b0e854b5eb189d
 vendor/lib64/libpdnotifier.so|f30b8e2438b24245acc230c5c51615ff40d711f7
 
-# phoenix_sprout - Peripheral manager
-vendor/bin/pm-proxy|101d68c137b7304c1d5ca5a5efa97e26ee60a596
-vendor/bin/pm-service|2d626e6ea539521e54d9ac8dfe42722656a0112d
-vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
-
 # phoenix_sprout - Qualcomm Trusted Execution Environment
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5

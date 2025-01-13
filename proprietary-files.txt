@@ -1,8 +1,8 @@
 # All unpinned blobs below are from joan H930 31a
 # joan_global_com-user 9 PKQ1.190414.001 193091504cde8 release-keys
 
-# Current blobs with ELF checks disabled:
 #
+# Current blobs with ELF checks disabled:
 # The following depend on compiler intrinsic symbols that are not exported:
 # liblgmda, libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera_faceproc
 
@@ -626,6 +626,11 @@ vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
+
+# Peripheral manager - from FP3 - fp3_gms-user 13 6.A.031.5 gms-fa7632b5 release-keys
+vendor/bin/pm-proxy|910437c11108aa66e803bbc760ce3998d141a6b4
+vendor/bin/pm-service|98827a6bf6693033a7c767e3fb4f097b9075a0ef
+vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Postprocessing
 vendor/etc/qdcm_calib_data_SW43402_cmd_mode_dsc_dsi_panel.xml
