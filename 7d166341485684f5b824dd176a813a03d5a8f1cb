@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75278ef7_ade60b9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2025-01-13T05:57:04Z",
+      "side": 1,
+      "message": "IWlan is flaky with this, even after disabling the SystemUI overlay",
+      "revId": "7d166341485684f5b824dd176a813a03d5a8f1cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
