@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "18859770_c313ff50",
+        "filename": "proprietary-files_phoenix.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2025-01-13T05:12:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "62852953_06a7e50b",
+      "range": {
+        "startLine": 267,
+        "startChar": 11,
+        "endLine": 267,
+        "endChar": 21
+      },
+      "revId": "7af558f7dae78f1c61f5e7a3ebf2d30b4af295ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fc0a62a9_4c461a5e",
@@ -47,6 +71,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3eae90b_ca0f1304",
+        "filename": "proprietary-files_phoenix.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2025-01-13T05:12:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc0a62a9_4c461a5e",
+      "range": {
+        "startLine": 271,
+        "startChar": 11,
+        "endLine": 271,
+        "endChar": 41
+      },
+      "revId": "7af558f7dae78f1c61f5e7a3ebf2d30b4af295ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "46c07645_f048aad9",
@@ -60,6 +108,30 @@
       "writtenOn": "2025-01-12T23:51:00Z",
       "side": 1,
       "message": "and this",
+      "range": {
+        "startLine": 276,
+        "startChar": 13,
+        "endLine": 276,
+        "endChar": 43
+      },
+      "revId": "7af558f7dae78f1c61f5e7a3ebf2d30b4af295ea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc57ae9a_192db470",
+        "filename": "proprietary-files_phoenix.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 276,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2025-01-13T05:12:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "46c07645_f048aad9",
       "range": {
         "startLine": 276,
         "startChar": 13,
