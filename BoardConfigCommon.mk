@@ -105,9 +105,6 @@ TARGET_KERNEL_SOURCE := kernel/lge/msm8998
 TARGET_KERNEL_VERSION := 4.4
 TARGET_KERNEL_LLVM_BINUTILS := false
 
-# Lights
-$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(COMMON_PATH)/include)
-
 # Media
 TARGET_USES_ION := true
 
