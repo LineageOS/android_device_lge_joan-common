@@ -84,7 +84,6 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_lge_msm8998
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lge_msm8998
 
 # Kernel

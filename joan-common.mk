@@ -227,6 +227,8 @@ PRODUCT_PACKAGES += \
     fstab.joan \
     ueventd.joan.rc
 
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_lge_msm8998)
+
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
