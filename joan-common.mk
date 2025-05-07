@@ -353,6 +353,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.joan.rc:root/init.recovery.joan.rc
 
+$(call soong_config_set,lineage_recovery,bootloader_message_offset,128)
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
