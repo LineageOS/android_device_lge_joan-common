@@ -1,3 +1,0 @@
-attribute hal_vss_ims;
-attribute hal_vss_ims_client;
-attribute hal_vss_ims_server;
