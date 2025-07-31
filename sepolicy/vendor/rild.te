@@ -1,4 +1,0 @@
-get_prop(rild, rild_prop);
-set_prop(rild, rild_prop);
-
-allow rild vendor_file:file { ioctl };

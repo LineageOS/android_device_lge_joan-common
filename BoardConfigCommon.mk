@@ -148,9 +148,10 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/vendor/etc/fstab.joan
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 include hardware/lge/sepolicy/SEPolicy.mk
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include hardware/sony/timekeep/sepolicy/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public

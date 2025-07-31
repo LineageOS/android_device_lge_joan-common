@@ -1,6 +1,0 @@
-get_prop(system_server, {
-    baseband_prop
-    exported_camera_prop
-    userspace_reboot_exported_prop
-    userspace_reboot_config_prop
-});

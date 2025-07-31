@@ -1,3 +1,0 @@
-r_dir_file(hal_nfc_default, nfc_vendor_data_file);
-
-allow hal_nfc_default nfc_device:chr_file { read write ioctl };

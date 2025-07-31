@@ -1,4 +1,0 @@
-get_prop(zygote, {
-    baseband_prop
-    exported_camera_prop
-});

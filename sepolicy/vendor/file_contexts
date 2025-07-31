@@ -1,29 +1,2 @@
-/dev/block/platform/soc/1da4000.ufshc/sda3										u:object_r:mpt_block_device:s0
-/dev/block/platform/soc/1da4000.ufshc/sda4										u:object_r:drm_block_device:s0
-/dev/block/platform/soc/1da4000.ufshc/sda5										u:object_r:sns_block_device:s0
-/dev/block/platform/soc/1da4000.ufshc/sda16										u:object_r:qni_block_device:s0
-/dev/block/platform/soc/1da4000.ufshc/sda21										u:object_r:userdata_block_device:s0
-/dev/pn547																		u:object_r:nfc_device:s0
-
-/firmware(/.*)?                                                                 u:object_r:firmware_file:s0
-
-/mnt/vendor/persist-lg(/.*)?													u:object_r:persist_lg_data_file:s0
-/mnt/vendor/persist-lg/data/widevine(/.*)?										u:object_r:persist_drm_file:s0
-/mnt/vendor/persist-lg/firmware(/.*)?											u:object_r:persist_lg_firmware_file:s0
-/mnt/vendor/persist-lg/wifi(/.*)?												u:object_r:persist_lg_firmware_file:s0
-/mnt/vendor/persist-lg/thermal(/.*)?											u:object_r:persist_lg_thermal_file:s0
-/mnt/vendor/persist-lg/kmstore(/.*)?											u:object_r:kmstore_data_file:s0
-
-/mnt/vendor/sns																	u:object_r:sns_file:s0
-/mnt/vendor/sns/cal(/.*)?														u:object_r:sns_file:s0
-/mnt/vendor/persist-lg/sensors(/.*)?											u:object_r:sensors_persist_file:s0
-
-/(vendor|system/vendor)/bin/timekeep											u:object_r:timekeep_exec:s0
-
-/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@1\.1-service\.joan				u:object_r:hal_thermal_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine				u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.joan					u:object_r:hal_lineage_touch_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.biometrics\.fingerprint@2\.1-service	u:object_r:hal_fingerprint_default_exec:s0
-
 /(vendor|system/vendor)/bin/init\.baseband\.sh									u:object_r:qti_init_shell_exec:s0
-/(vendor|system/vendor)/bin/init\.joan\.hdmi\.sh								u:object_r:qti_init_shell_exec:s0

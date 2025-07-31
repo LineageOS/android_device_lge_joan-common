@@ -1,5 +1,0 @@
-get_prop(hal_dac_control_default, vendor_audio_prop);
-set_prop(hal_dac_control_default, vendor_audio_prop);
-
-allow hal_dac_control_default sysfs_lge_hifi_dac:dir r_dir_perms;
-allow hal_dac_control_default sysfs_lge_hifi_dac:file rw_file_perms;

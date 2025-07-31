@@ -1,6 +1,0 @@
-# For setting read_ahead_kb
-allow vold sysfs_mmc_host:file w_file_perms;
-
-allow vold sysfs_scsi_devices_0000:file w_file_perms;
-
-allow vold persist_lg_data_file:dir { read open ioctl };
