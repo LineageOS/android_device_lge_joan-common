@@ -1,8 +1,0 @@
-type_transition sensors system_data_file:{ dir file } sensors_data_file;
-
-get_prop(sensors, vendor_sensors_prop);
-
-allow sensors sns_file:dir r_dir_perms;
-allow sensors sns_file:file rw_file_perms;
-
-allow sensors sensors:capability { net_raw };

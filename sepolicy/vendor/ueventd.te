@@ -1,2 +1,0 @@
-r_dir_file(ueventd, persist_lg_data_file);
-r_dir_file(ueventd, persist_lg_firmware_file);
