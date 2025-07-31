@@ -1,9 +1,0 @@
-vendor_internal_prop(netmgrd_prop);
-vendor_internal_prop(qti-shell_prop);
-vendor_internal_prop(rild_prop);
-vendor_internal_prop(thermal-engine_prop);
-
-vendor_public_prop(vendor_camera_prop);
-vendor_public_prop(vendor_fp_prop);
-
-type vendor_timekeep_prop, vendor_property_type, property_type;

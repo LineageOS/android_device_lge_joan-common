@@ -1,6 +1,0 @@
-get_prop(toolbox, baseband_prop);
-
-allow toolbox init:fifo_file { getattr read write };
-allow toolbox init:unix_stream_socket { connectto };
-allow toolbox block_device:blk_file { getattr };
-allow toolbox property_socket:sock_file { getattr write };

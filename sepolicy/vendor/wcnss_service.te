@@ -1,4 +1,0 @@
-allow wcnss_service kmsg_device:chr_file { open read write };
-
-allow wcnss_service persist_lg_data_file:dir search;
-r_dir_file(wcnss_service, persist_lg_firmware_file);
