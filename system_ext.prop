@@ -3,7 +3,11 @@
 #
 
 # DPM
-persist.vendor.dpm.feature=11
+persist.dpm.feature=0
+persist.vendor.dpm.feature=0
+
+# NFC
+persist.nfc.smartcard.config=SIM1,eSE1
 
 # Logging
 debug.vendor.sns.daemon=0

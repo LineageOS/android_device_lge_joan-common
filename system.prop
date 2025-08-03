@@ -5,6 +5,8 @@
 # Audio
 audio.deep_buffer.media=true
 audio.offload.video=false
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
 
 # Bluetooth profiles
 bluetooth.profile.asha.central.enabled?=true
@@ -52,6 +54,9 @@ ro.fastbootd.available=true
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=48
@@ -61,16 +66,17 @@ ro.vendor.qti.va_aosp.support=1
 
 # Radio
 DEVICE_PROVISIONED=1
+persist.data.netmgrd.qos.enable=true
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=10
 telephony.lteOnCdmaDevice=1
 
-# Time services
-persist.delta_time.enable=true
-
 # Voice assistant
 ro.opa.eligible_device=true
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Do not block binder thread on incoming calls
 ro.telephony.block_binder_thread_on_incoming_calls=false
