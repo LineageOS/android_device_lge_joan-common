@@ -172,7 +172,6 @@ persist.vendor.data.iwlan.enable=true
 
 # NFC
 persist.nfc.smartcard.config=SIM1,eSE1
-ro.nfc.port=I2C
 
 # OMX
 debug.stagefright.omx_default_rank=0
