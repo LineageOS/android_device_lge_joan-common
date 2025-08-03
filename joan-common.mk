@@ -203,31 +203,21 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0.vendor
 
 # Init
-PRODUCT_PACKAGES += \
-    init.baseband.sh \
-    init.class_main.sh \
-    init.joan.hdmi.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qti.fm.sh
-
-PRODUCT_PACKAGES += \
-    init.baseband.proxy.rc \
-    init.joan.rc \
-    init.lge.fingerprints.rc \
-    init.msm8998.rc \
-    init.qcom.rc \
-    init.qcom.power.rc \
-    init.qcom.usb.rc \
-    init.qti.fm.rc \
-    init.target.rc
-
-PRODUCT_PACKAGES += \
-    fstab.joan \
-    ueventd.joan.rc
-
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_lge_msm8998)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.joan:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.joan \
+    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.joan:$(TARGET_COPY_OUT_RAMDISK)/fstab.joan \
+    $(LOCAL_PATH)/rootdir/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/system_ext/etc/init/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/$(notdir $f)))
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/bin/*.sh),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/bin/$(notdir $f)))
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/etc/init/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/$(notdir $f)))
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/etc/init/hw/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
 # IRSC
 PRODUCT_COPY_FILES += \
