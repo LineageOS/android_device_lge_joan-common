@@ -142,7 +142,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xxxhdpi
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.joan
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/vendor/etc/fstab.joan
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
