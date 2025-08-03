@@ -206,18 +206,12 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_lge_msm8998)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.joan:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.joan \
-    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.joan:$(TARGET_COPY_OUT_RAMDISK)/fstab.joan \
-    $(LOCAL_PATH)/rootdir/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+    $(LOCAL_PATH)/rootdir/vendor/etc/fstab.joan:$(TARGET_COPY_OUT_RAMDISK)/fstab.joan
 
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/system_ext/etc/init/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/$(notdir $f)))
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/bin/*.sh),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/bin/$(notdir $f)))
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/etc/init/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/$(notdir $f)))
-$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/vendor/etc/init/hw/*.rc),\
-        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
+$(foreach f,$(shell find -L $(LOCAL_PATH)/rootdir/system_ext/ -type f),\
+    $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM_EXT)/$(subst $(LOCAL_PATH)/rootdir/system_ext/,,$(f))))
+$(foreach f,$(shell find -L $(LOCAL_PATH)/rootdir/vendor/ -type f),\
+    $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/$(subst $(LOCAL_PATH)/rootdir/vendor/,,$(f))))
 
 # IRSC
 PRODUCT_COPY_FILES += \
