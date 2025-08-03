@@ -33,13 +33,12 @@
 baseband=`getprop ro.baseband`
 sgltecsfb=`getprop persist.vendor.radio.sglte_csfb`
 datamode=`getprop persist.vendor.data.mode`
-rild_status=`getprop init.svc.ril-daemon`
 vendor_rild_status=`getprop init.svc.vendor.ril-daemon`
 
 case "$baseband" in
     "apq" | "sda" | "qcs" )
     setprop ro.vendor.radio.noril yes
-    if [ -n "$rild_status" ] || [ -n "$vendor_rild_status" ]; then
+    if [ -n "$vendor_rild_status" ]; then
       stop ril-daemon
       stop vendor.ril-daemon
       start vendor.ipacm
@@ -104,10 +103,9 @@ case "$baseband" in
     fi
 
     # Get ril-daemon status again to ensure that we have latest info
-    rild_status=`getprop init.svc.ril-daemon`
     vendor_rild_status=`getprop init.svc.vendor.ril-daemon`
 
-    if [[ -z "$rild_status" || "$rild_status" = "stopped" ]] && [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
+    if [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
       start vendor.qcrild
     fi
     start vendor.ipacm-diag
@@ -128,13 +126,13 @@ case "$baseband" in
     multisim=`getprop persist.radio.multisim.config`
 
     if [ "$multisim" = "dsds" ] || [ "$multisim" = "dsda" ]; then
-        if [[ -z "$rild_status" || "$rild_status" = "stopped" ]] && [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
+        if [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
           start vendor.qcrild2
         else
           start vendor.ril-daemon2
         fi
     elif [ "$multisim" = "tsts" ]; then
-        if [[ -z "$rild_status" || "$rild_status" = "stopped" ]] && [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
+        if [[ -z "$vendor_rild_status" || "$vendor_rild_status" = "stopped" ]]; then
           start vendor.qcrild2
           start vendor.qcrild3
         else
