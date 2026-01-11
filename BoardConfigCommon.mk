@@ -111,10 +111,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware
 
 BOARD_SUPER_PARTITION_METADATA_DEVICE := system
-BOARD_SUPER_PARTITION_SIZE := 6157737984
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6153543680 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 TARGET_USERIMAGES_USE_EXT4 := true
