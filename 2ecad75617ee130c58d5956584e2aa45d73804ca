@@ -16,6 +16,23 @@
       "message": "Hi, I’ve added you as a reviewer to this change.  \nIf you have time, I’d appreciate your review on the three commits.\nThanks",
       "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd9db976_63fc1f6a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2026-01-11T08:45:07Z",
+      "side": 1,
+      "message": "Hi there,\n\nCan we not simply shrink the super space for all devices? We\u0027re not using that much space. I see you changed l01k to about 5.4 gigabytes which is *still* an absurdly large number for what actually gets installed there.\n\nAlso, which JP device is the one that had 1 less gigabyte? I\u0027m curious, we should document in a code comment.",
+      "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
