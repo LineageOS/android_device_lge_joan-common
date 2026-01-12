@@ -69,6 +69,24 @@
       "parentUuid": "ed9c6317_7d7f8528",
       "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f7fa113_4de8b162",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35565
+      },
+      "writtenOn": "2026-01-12T07:58:00Z",
+      "side": 1,
+      "message": "Ok!\nI\u0027ll abandon the commits except joan-common, and reduce the values to 5GB",
+      "parentUuid": "76fb94d6_41c12da7",
+      "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
