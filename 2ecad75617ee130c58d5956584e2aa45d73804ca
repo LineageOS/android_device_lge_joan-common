@@ -33,6 +33,24 @@
       "message": "Hi there,\n\nCan we not simply shrink the super space for all devices? We\u0027re not using that much space. I see you changed l01k to about 5.4 gigabytes which is *still* an absurdly large number for what actually gets installed there.\n\nAlso, which JP device is the one that had 1 less gigabyte? I\u0027m curious, we should document in a code comment.",
       "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed9c6317_7d7f8528",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35565
+      },
+      "writtenOn": "2026-01-12T02:25:28Z",
+      "side": 1,
+      "message": "I measured the super space on Docomo(JP)\u0027s L01K from stock. Could you tell me what\u0027s a good value? Also, we don\u0027t have joan, so we don\u0027t know what value to set. Sorry about that.\nThe ones we have are L-01K, L-02K, and LGV35.",
+      "parentUuid": "dd9db976_63fc1f6a",
+      "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
