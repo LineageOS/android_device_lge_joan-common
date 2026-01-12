@@ -51,6 +51,24 @@
       "parentUuid": "dd9db976_63fc1f6a",
       "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76fb94d6_41c12da7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2026-01-12T06:15:26Z",
+      "side": 1,
+      "message": "The one currently set in joan-common is the correct size for joan. (I think it also worked for KDDI. Maybe the Docomo devices don\u0027t.)\n\nHowever, instead of decommonizing the sizes, I think it would be better if we used the L01K value for all the V30 models (so make the size change in joan-common instead). Like I said before, 5GB is already a lot of space, it shouldn\u0027t be a problem.",
+      "parentUuid": "ed9c6317_7d7f8528",
+      "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
