@@ -87,6 +87,23 @@
       "parentUuid": "76fb94d6_41c12da7",
       "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d68466cd_eaf0d661",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-01-12T08:14:47Z",
+      "side": 1,
+      "message": "There\u0027s a better way of doing this. Check amlogic or OnePlus sm8750.",
+      "revId": "2ecad75617ee130c58d5956584e2aa45d73804ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
