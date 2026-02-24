@@ -16,8 +16,6 @@
 
 using android::base::GetProperty;
 
-#define PROPERTY_LGE_MODEL "ro.boot.vendor.lge.model.name"
-
 static variant_info_t joan_global_com_info = {
     .brand = "lge",
     .device = "joan",
@@ -46,13 +44,17 @@ void init_target_properties()
         property_override("persist.radio.multisim.config", "dsds");
     }
 
-    model = GetProperty("ro.boot.vendor.lge.model.name", "UNKNOWN");
-    if(model == "LGV35")
+    std::string suffix = GetProperty("ro.boot.suffix", "");
+
+    if (suffix.find("LGV35") != std::string::npos) {
         variant = joan_kddi_jp_info;
-    else if (model == "L-01K")
+        model = "LGV35";
+    } else if (suffix.find("L-01K") != std::string::npos) {
         variant = joan_dcm_jp_info;
-    else
+        model = "L-01K";
+    } else {
         variant = joan_global_com_info;
+    }
 
     variant.model = model;
     set_variant_props(variant);
