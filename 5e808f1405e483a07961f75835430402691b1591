@@ -16,6 +16,24 @@
       "message": "In my environment, the LG V35 was being recognized as L01K, so I modified it to check whether the corresponding string exists by retrieving the value from ro.boot.suffix. I haven\u0027t tested this yet except my environment, so I\u0027d appreciate it if you could confirm whether this is the case elsewhere too.\n\nL-01K:/ $ getprop | grep ro.boot.vendor.lge.model.nam\n[ro.boot.vendor.lge.model.name]: [L-01K]\nL-01K:/ $",
       "revId": "5e808f1405e483a07961f75835430402691b1591",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f79b98de_ca5b9e19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2026-02-24T14:47:08Z",
+      "side": 1,
+      "message": "Something is really wrong if that prop is showing L-01K on your isai device. That value comes from the bootloader and the initial KDDI user I tested this with had the correct values.\n\nAre you sure this is not a Docomo device? Or did you ever flash different firmwares in the past?",
+      "parentUuid": "a88d9905_86bc61fe",
+      "revId": "5e808f1405e483a07961f75835430402691b1591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
