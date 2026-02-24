@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a88d9905_86bc61fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35565
+      },
+      "writtenOn": "2026-02-24T12:28:54Z",
+      "side": 1,
+      "message": "In my environment, the LG V35 was being recognized as L01K, so I modified it to check whether the corresponding string exists by retrieving the value from ro.boot.suffix. I haven\u0027t tested this yet except my environment, so I\u0027d appreciate it if you could confirm whether this is the case elsewhere too.\n\nL-01K:/ $ getprop | grep ro.boot.vendor.lge.model.nam\n[ro.boot.vendor.lge.model.name]: [L-01K]\nL-01K:/ $",
+      "revId": "5e808f1405e483a07961f75835430402691b1591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
