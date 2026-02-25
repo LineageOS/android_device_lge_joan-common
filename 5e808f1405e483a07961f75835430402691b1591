@@ -34,6 +34,24 @@
       "parentUuid": "a88d9905_86bc61fe",
       "revId": "5e808f1405e483a07961f75835430402691b1591",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "740eae7c_ba158098",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35565
+      },
+      "writtenOn": "2026-02-25T08:21:41Z",
+      "side": 1,
+      "message": "That\u0027s truly a mystery. KDDI logs appear, and it\u0027s definitely an LG V35. When unlocking, I flashed vulnerable abl and xbl files, then restored all partitions via EDL. Maybe my device\u0027s bootloader is broken. I\u0027ll try restoring it again later!",
+      "parentUuid": "f79b98de_ca5b9e19",
+      "revId": "5e808f1405e483a07961f75835430402691b1591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
