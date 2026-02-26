@@ -52,6 +52,23 @@
       "parentUuid": "f79b98de_ca5b9e19",
       "revId": "5e808f1405e483a07961f75835430402691b1591",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d9a3867_6ada2494",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35565
+      },
+      "writtenOn": "2026-02-26T11:21:57Z",
+      "side": 1,
+      "message": "After reflashing it, it worked fine. It seems my device\u0027s bootloader was broken. Sorry about that. I\u0027ll abandon this commit.",
+      "revId": "5e808f1405e483a07961f75835430402691b1591",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
